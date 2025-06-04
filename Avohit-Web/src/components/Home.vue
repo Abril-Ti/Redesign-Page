@@ -1,13 +1,10 @@
 <template>
     <div>
-        <div class="banner-container ">
+        <div class="banner-container">
             <div class="position-relative">
-                
-                <img src="/Logo-avohit-BLANCO.png" alt="" class="logo-bl position-absolute">
-                <img src="" alt="" class="banner-gif text-center">
-            </div>
-            <div>
-                
+                <img src="/Logo-avohit-BLANCO.png" alt="" class="logo-bl">
+                <div class="capa-oscura"></div>
+                <img src="/banner-panoramica.JPG" alt="" class="banner-gif">
             </div>
         </div>
 
@@ -64,7 +61,7 @@
                 <li>PrimusGFS.</li>
             </ul>
             FUTURO AVOCATIN
-        </div>
+        </div>  
         <div class="video-container">
             <p>Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
         </div>
@@ -74,12 +71,32 @@
 
 </script>
 <style>
-
+.banner-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 .banner-gif{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5))!important;
-    width: 1440px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .logo-bl{
     width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    z-index: 2;
 } 
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.2); /* 50% opacidad */
+  z-index: 1;
+}
 </style>
