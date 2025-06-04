@@ -8,8 +8,9 @@
             </div>
         </div>
 
-        <div>
-            <h2>BIENVENIDOS</h2>
+        <div class="text-center
+        ">
+            <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
             <P>Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.</P>
 
             <div>
@@ -47,12 +48,12 @@
         </div>
         
         <div class="carousel-container">
-            <h2>DESCUBRE</h2>
+            <h2 class="montserrat-regular">DESCUBRE</h2>
             <P>¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!</P>
             IMG
         </div>
         <div class="certificaciones-container">
-            <h2>CERTIFICACIONES</h2>
+            <h2 class="montserrat-regular">CERTIFICACIONES</h2>
             <ul>
                 <li>Programa de Exportaciones de Aguacate Hass de México a los E.U.A.</li>
                 <li>Norma GLOBALG.A.P. para Cadena de Custodia (CoC).</li>
@@ -63,6 +64,7 @@
             FUTURO AVOCATIN
         </div>  
         <div class="video-container">
+            <h2 class="montserrat-regular">CONOCE MAS ACERCA DE LO QUE HACEMOS</h2> <!-- Titulo momentaneo-->
             <p>Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container-header position-sticky">
+    <div class="container-header position-sticky montserrat-font-semibold">
         
         <div class="container-links">
             <nav>
@@ -38,7 +38,6 @@ import { RouterLink } from 'vue-router';
     height: 96px;
     box-shadow: 0px 4px 4px grey;
     position: sticky;
-     font-family: "Montserrat", sans-serif;
 }
 img{
     height: 60px;
