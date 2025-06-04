@@ -3,47 +3,73 @@
         
         <div class="container-links">
             <nav>
-                <v-sheet class="d-flex mb-6 ">
-                    <v-sheet class="ma-2 pa-3 me-auto">
+                <div class="v-sheet d-flex mb-6 ">
+                    <div class="v-sheet ma-2 pa-3 me-auto">
                         <div>
                             <img src="/Logo-avohit-GRIS.png" alt="">
                         </div>
-                    </v-sheet>
+                    </div>
 
-                    <v-sheet class="ma-8 "><RouterLink v-sheet to="/" class="text-center nav-link">INICIO</RouterLink></v-sheet>
-                    <v-sheet class="ma-8 "><RouterLink v-sheet to="/nosotros"class="nav-link">NOSOTROS</RouterLink></v-sheet>
-                    <v-sheet class="ma-8 "><RouterLink to="/compromiso" class="nav-link">COMPROMISO</RouterLink></v-sheet>
-                    <v-sheet class="ma-8 "><RouterLink to="/sabiasque" class="nav-link">¿SABÍAS QUÉ?</RouterLink></v-sheet>
-                    <v-sheet class="ma-8 "><RouterLink to="/contacto" class="nav-link">CONTACTO</RouterLink></v-sheet>
+                    <div class="v-sheet ma-7 "><RouterLink to="/" class="text-center nav-link">INICIO</RouterLink></div>
+                    <div class="v-sheet ma-7 "><RouterLink to="/nosotros"class="nav-link">NOSOTROS</RouterLink></div>
+                    <div class="v-sheet ma-7 "><RouterLink to="/compromiso" class="nav-link">COMPROMISO</RouterLink></div>
+                    <div class="v-sheet ma-8 "><RouterLink to="/sabiasque" class="nav-link">¿SABÍAS QUÉ?</RouterLink></div>
+                    <!--                    <div class="v-sheet ma-8  contact-class text-center"><RouterLink to="/contacto" class="nav-link" style="color: white;">CONTACTO</RouterLink></div>
+ -->                <div class="v-sheet ma-6">
+                            <RouterLink to="/contacto" class=""><button class="">CONTACTO</button></RouterLink>
+ </div>
+                    
 
-                </v-sheet>
+                    
+                </div>
             </nav>
         </div>
+
     </div>
-    <RouterView/>
+     <!-- <RouterView/>--> 
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink } from 'vue-router';
 </script>
 
 <style scoped>
 .container-header{
     height: 96px;
-    box-shadow: 0px 5px 5px grey;
+    box-shadow: 0px 4px 4px grey;
     position: sticky;
+     font-family: "Montserrat", sans-serif;
 }
 img{
-    height: 72px;
+    height: 60px;
 }
 .nav-link {
     text-decoration: none;
     color: black;
-    font-size: 14;
-    letter-spacing: 2px;
-    text-shadow: 2px 1px 4px grey;
+    letter-spacing: 4px;
+    /*text-shadow: 2px 1px 3px grey;*/
+    font-size: 14px;
 }
 .v-sheet{
     background: none;
+}
+
+button{
+    height: 36px;
+    width: 146px;
+    background-color: #276918;
+    color: white!important;
+    border-radius: 18px;
+    /*box-shadow: 0px 4px 8px grey;*/
+    letter-spacing: 3px;
+}
+button:hover{
+    background-color: #387c27;
+    box-shadow: 0px 4px 8px grey;
+}
+.nav-link:hover{
+    color: #276918;
+    text-shadow: 2px 5px 5px rgb(199, 196, 196);
+    
 }
 </style>

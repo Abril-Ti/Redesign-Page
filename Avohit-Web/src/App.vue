@@ -1,15 +1,13 @@
 <template>
-<div class="position-relative">
-  <Header></Header>
-  
-  <Footer></Footer>
-  
-</div>
+<Header></Header>
 
+<RouterView></RouterView>
+
+<Footer></Footer>
 </template>
 <script setup>
-import Header from "../src/components/Header.vue"
-import Footer from "../src/components/Footer.vue"
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 <style scoped>
 

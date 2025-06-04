@@ -1,13 +1,17 @@
 <template>
   <div>
-    <Home></Home>
+   <HomeComponent/>
+
+    
   </div>
 </template>
 
 <script setup>
-import Home from '../components/Home.vue'
+import HomeComponent from '../components/Home.vue'
+
 </script>
 
 <style scoped>
 
 </style>
+ 

@@ -21,7 +21,7 @@ MAPS
 
         </div>
         <div class="copyright text-center">
-            <p>2025 Copyright Grupo AvoHit de México. Todos los derechos reservados. </p>
+            <p>© 2025 Copyright Grupo AvoHit de México. Todos los derechos reservados. </p>
         </div>
     </div>
 </template>
