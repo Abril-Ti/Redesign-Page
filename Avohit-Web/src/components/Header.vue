@@ -1,6 +1,5 @@
 <template>
-    <div class="container-header position-sticky montserrat-font-semibold">
-        
+    <div class="container-header position-sticky montserrat-font-semibold">    
         <div class="container-links">
             <nav>
                 <div class="v-sheet d-flex mb-6 ">
@@ -16,11 +15,8 @@
                     <div class="v-sheet ma-8 "><RouterLink to="/sabiasque" class="nav-link">¿SABÍAS QUÉ?</RouterLink></div>
                     <!--                    <div class="v-sheet ma-8  contact-class text-center"><RouterLink to="/contacto" class="nav-link" style="color: white;">CONTACTO</RouterLink></div>
  -->                <div class="v-sheet ma-6">
-                            <RouterLink to="/contacto" class=""><button class="">CONTACTO</button></RouterLink>
- </div>
-                    
-
-                    
+                        <RouterLink to="/contacto" class=""><button class="">CONTACTO</button></RouterLink>
+                    </div>                                        
                 </div>
             </nav>
         </div>
@@ -52,7 +48,6 @@ img{
 .v-sheet{
     background: none;
 }
-
 button{
     height: 36px;
     width: 146px;
@@ -68,7 +63,6 @@ button:hover{
 }
 .nav-link:hover{
     color: #276918;
-    text-shadow: 2px 5px 5px rgb(199, 196, 196);
-    
+    text-shadow: 2px 5px 5px rgb(199, 196, 196);   
 }
 </style>
