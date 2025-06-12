@@ -23,6 +23,7 @@
         </div>
         
         <div class="carousel-container text-center">
+            https://codepen.io/aybukeceylan/pen/RwrRPoO
             <h2 class="montserrat-regular title-line text-center line">DESCUBRE</h2>
             <P class="txt-description">¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!</P>
             <div>
