@@ -1,8 +1,8 @@
 <template>
-COMPROMISO
+<CompromisoComponent/>
 </template>
-<script>
-
+<script setup>
+import CompromisoComponent from "../components/Compromiso.vue"
 </script>
 <style>
 
