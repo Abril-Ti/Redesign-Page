@@ -1,8 +1,8 @@
 <template>
-SABIAS QUE XD
+<SabiasQueComponent/>
 </template>
-<script>
-
+<script setup>
+import SabiasQueComponent from '../components/Sabiasque.vue'
 </script>
 <style>
 
