@@ -1,8 +1,10 @@
 <template>
-NOSOTROS
+    <div>
+        <NosotrosComponent/>
+    </div>
 </template>
-<script>
-
+<script setup>
+import NosotrosComponent from '../components/Nosotros.vue'
 </script>
 <style>
 

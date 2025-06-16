@@ -45,9 +45,7 @@ img{
     /*text-shadow: 2px 1px 3px grey;*/
     font-size: 14px;
 }
-.v-sheet{
-    background: none;
-}
+
 button{
     height: 36px;
     width: 146px;
