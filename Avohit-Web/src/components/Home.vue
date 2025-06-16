@@ -6,18 +6,18 @@
             <P class="mt-16 mb-16 txt-description">Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.</P>
             
             <div class="v-sheet d-flex mb-6">
-                <img src="/avocado.jpg" alt="" class="v-sheet ma-7" style="width: 540px;">
+                <img src="/avocado.jpg" alt="" class="v-sheet ma-7 img-content">
                 <P class="txt-description v-sheet ma-7">Nos esforzamos por ofrecer al mercado nacional e internacional un producto de primera calidad, con un sabor excepcional, altos estándares de inocuidad y un proceso de trazabilidad confiable de principio a fin.</P>
             </div>
             
 
             <div class="v-sheet d-flex mb-6">
                 <P class="txt-description v-sheet ma-7">Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.</P>
-                <img src="/avocado.jpg" alt="" class="v-sheet ma-7" style="width: 540px;">
+                <img src="/avocado.jpg" alt="" class="v-sheet ma-7 img-content">
             </div>
 
             <div class="v-sheet d-flex mb-6">
-                <img src="/avocado.jpg" alt="" class="v-sheet ma-7" style="width: 540px;">
+                <img src="/avocado.jpg" alt="" class="v-sheet ma-7 img-content">
                 <P class="txt-description v-sheet ma-7">Al mismo tiempo, impulsamos el desarrollo y la prosperidad de las comunidades donde operamos, reafirmando nuestro compromiso social y ambiental.</P>
             </div>
         </div>
@@ -79,5 +79,8 @@ ul{
 li{
     margin-top: 70px;
     width: 600px;
+}
+.img-content{
+    width: 540px;
 }
 </style>
