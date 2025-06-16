@@ -1,8 +1,8 @@
 <template>
- CONTACTO
+ <ContactoComponent/>
 </template>
-<script>
-
+<script setup>
+import ContactoComponent from '../components/Contacto.vue'
 </script>
 <style>
 
