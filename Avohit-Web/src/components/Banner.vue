@@ -1,9 +1,9 @@
 <template>
             <div class="banner-container">
             <div class="position-relative">
-                <img src="/Logo-avohit-BLANCO.png" alt="" class="logo-bl">
+                <img src="/Logo-avohit-BLANCO.png" alt="" class="logo-bl img-f">
                 <div class="capa-oscura"></div>
-                <img src="/banner-panoramica.JPG" alt="" class="banner-gif">
+                <img src="/banner-panoramica.JPG" alt="" class="banner-gif img-c">
             </div>
         </div>
 
@@ -30,6 +30,7 @@
     transform: translate(-50%, -50%);
     height: auto;
     z-index: 2;
+    animation: fadeIn 2s ease-in-out forwards;
 } 
 .capa-oscura {
   position: absolute;
@@ -40,4 +41,13 @@
   background-color: rgba(0, 0, 0, 0.2); /* 50% opacidad */
   z-index: 1;
 }
+@media (max-width: 768px) {
+    .logo-bl{
+        width: 50%;
+    }
+}
+
+
+
+
 </style>
