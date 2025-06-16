@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2 class="text-center montserrat-regular" style="margin-top: 10rem; margin-bottom: 40px;">PONTE EN CONTACTO</h2>
+        <div class="decorative-line"></div>
         <div  class="d-flex mb-6 text-center" style="box-shadow: 4px 4px 4px grey; width: 70%;">
             <div class="form-contact">
                <form action="https://grupoavohitdemexico.com/Contactanos.html" target="_blank" method="POST">

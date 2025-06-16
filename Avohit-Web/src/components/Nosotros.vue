@@ -2,6 +2,7 @@
     <div>
         <div>
             <h2 class="text-center montserrat-regular" style="margin-top: 10rem;">NOSOTROS</h2> 
+            <div class="decorative-line"></div>
             <div class="v-sheet d-flex mb-6">
                 <P class="txt-description v-sheet ma-7">Somos una empresa pionera en el rubro del aguacate, cuyo propósito inicia desde la selección de las mejores tierras y ubicación geográfica que involucra la diversidad de climas y altitudes con la finalidad de producir la mejor calidad y máximo volumen en el mundo.</P>
                 <img src="/avocado.jpg" alt="" class="v-sheet ma-7 img-content" >
@@ -10,6 +11,7 @@
 
         <div>
             <h2 class="text-center montserrat-regular" style="margin-top: 11rem;">NUESTRO RUMBO</h2>
+            <div class="decorative-line"></div>
             <div>
                 <div class="v-sheet d-flex mb-6">
                 <img src="/avocado.jpg" alt="" class="v-sheet ma-7 img-content" >
@@ -30,6 +32,7 @@
         </div>
         <div class="text-center">
             <h2 class="text-center montserrat-regular" style="margin-top: 10rem; margin-bottom: 10rem;">GRUPO AVOHIT DE MÉXICO A TRAVES DEL TIEMPO</h2>
+            <div class="decorative-line"></div>
 
             <div class="container-2019">
                <img src="/2019.png" alt="">
