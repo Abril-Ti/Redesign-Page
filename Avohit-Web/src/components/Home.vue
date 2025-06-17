@@ -40,8 +40,9 @@
       <p class="txt-description mb-10">
         ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
       </p>
-
-   <SliderComponent/>
+<!-- <SliderComponent/>
+      -->
+   
     </div>
    
     
