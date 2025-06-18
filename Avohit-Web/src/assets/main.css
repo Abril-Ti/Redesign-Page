@@ -37,6 +37,7 @@ hr{
   font-size: 23px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
+  text-align: justify;
 }
 .v-sheet{
     background: none;
@@ -45,6 +46,9 @@ hr{
 @media (max-width: 768px) {
   h2{
     font-size: 25px;
+  }
+  .txt-description{
+    font-size: 15px;
   }
 }
 
