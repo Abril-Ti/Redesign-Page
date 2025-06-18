@@ -21,7 +21,7 @@
                             <div class="d-flex mb-6">
                                 <img src="/mail.png" alt="" class="icons i-mail">
                                 <a href="mailto:direccion@grupoavohitdemexico.com"> 
-                                    <p style="font-size: 18px;" class="mt-2 p-mail">direccion@grupoavohitdemexico.com</p>
+                                    <p style="font-size: 18px;" class="mt-2 p-mail">ti@grupoavohitdemexico.com</p>
                                 </a>
                                
                             </div>
@@ -145,6 +145,10 @@ a{
     padding: 1px;
 }
 }
-
+@media (max-width: 600px) {
+    .p-mail{
+        font-size: 5px;
+    }
+}
 
 </style>
