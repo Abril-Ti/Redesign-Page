@@ -34,7 +34,7 @@
         <div class="text-center">
             <v-container >
                 <v-row no-gutters>
-                    <v-col v-for="(foto, index) in fotos" :key="index" cols="12" sm="3" style="padding: 20px;">
+                    <v-col v-for="(foto, index) in fotos" :key="index" cols="12" sm="3" style="padding: 20px;" data-aos="flip-down"> 
                         <img :src="foto.url" :alt="foto.texto"  class="icon-valor">
                         <p class="txt-description text-center valor">{{foto.texto}}</p>
                     </v-col>
