@@ -1,4 +1,5 @@
 <template>
+    <h1>PENDIENTE DE INDICACIONES</h1>
 <div>
     <div class="banner-container">
 AQUI VA UN BANNER CON EL TITULO
