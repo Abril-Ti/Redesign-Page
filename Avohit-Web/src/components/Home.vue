@@ -73,6 +73,7 @@
         src="/VideoPrueba.mp4"
         autoplay
         muted
+        controls
         playsinline
         preload="auto"
         class="promo-video"
