@@ -57,8 +57,6 @@
             :class="['dot', { active: index === current }]"
             @click="goTo(index)"
           ></span>
-   
-  
 </div>
   </div>
 </template>
@@ -71,12 +69,12 @@ export default {
       current: 0,
       showModal: false,
       images: [
-        { src: '/slider-1.JPG', alt: 'Imagen 1' },
-        { src: '/slider-2.JPG', alt: 'Imagen 2' },
-        { src: '/slider-3.JPG', alt: 'Imagen 3' },
-        { src: '/slider-4.JPG', alt: 'img 4' },
-        { src: '/slider-5.JPG', alt: 'Imagen 5' },
-        { src: '/slider-6.JPG', alt: 'Imagen 6' },
+        { src: 'Slider/Slide0.JPG', alt: 'Imagen 1' },
+        { src: 'Slider/Slide1.JPG', alt: 'Imagen 2' },
+        { src: 'Slider/Slide2.JPG', alt: 'Imagen 3' },
+        { src: 'Slider/Slide3.JPG', alt: 'imagen 4' },
+        { src: 'Slider/Slide4.JPG', alt: 'Imagen 5' },
+        { src: 'Slider/Slide5.JPG', alt: 'Imagen 6' },
       ]
     };
   },

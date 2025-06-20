@@ -47,14 +47,14 @@
 </template>
 <script setup>
 const fotos = [
-  { url: '/val-1.png', texto: 'Calidad' },
-  { url: '/val-2.png', texto: 'Honestidad' },
-  { url: '/val-3.png', texto: 'Gratitud' },
-  { url: '/val-4.png', texto: 'Responsabilidad' },
-  { url: '/val-5.png', texto: 'Ética' },
-  { url: '/val-6.png', texto: 'Pasión' },
-  { url: '/val-7.png', texto: 'Trabajo en equipo' },
-  { url: '/val-8.png', texto: 'Respeto' },
+  { url: 'valores/val-1.png', texto: 'Calidad' },
+  { url: 'valores/val-2.png', texto: 'Honestidad' },
+  { url: 'valores/val-3.png', texto: 'Gratitud' },
+  { url: 'valores/val-4.png', texto: 'Responsabilidad' },
+  { url: 'valores/val-5.png', texto: 'Ética' },
+  { url: 'valores/val-6.png', texto: 'Pasión' },
+  { url: 'valores/val-7.png', texto: 'Trabajo en equipo' },
+  { url: 'valores/val-8.png', texto: 'Respeto' },
 ];
 </script>
 <style scoped>
