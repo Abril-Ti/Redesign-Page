@@ -3,54 +3,6 @@
     <h2 class="text-center montserrat-regular mt-40">GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO</h2>
     <div class="decorative-line mb-10 mx-auto"></div>
     
-    <!--
-     <div>
-    <div class="text-center">
-      
-
-     
-      <div class="container-2019 text-center mb-10">
-        <img src="/2019.png" alt="" class="year-label mb-6">
-        <div class="timeline-item">
-          <img src="/avocado.jpg" alt="" class="timeline-image">
-          <div class="timeline-dots" >
-            <img v-for="n in 5" :key="n" src="/ElipseVerde.png" alt="" data-aos="zoom-in-right">
-          </div>
-          <p class="timeline-text" data-aos="fade-up">En agosto se colocó la primera piedra de la Mega Planta agroindustrial de AvoHit, en Morelia Michoacán.</p>
-        </div>
-      </div>
-
-
-      <div class="container-2022 text-center mb-10" data-aos="fade-up">
-        <img src="/2022.png" alt="" class="year-label mb-6" data-aos="zoom-in">
-        <div class="timeline-item" data-aos="fade-right">
-          <div class="timeline-text-block">
-            <p>Febrero, inauguración del empaque.</p>
-            <img src="/avocado.jpg" alt="" class="timeline-image mb-3">
-          </div>
-          <div class="timeline-dots" data-aos="zoom-in-right">
-            <img v-for="n in 14" :key="n" src="/ElipseVerde.png" alt="">
-          </div>
-          <div class="timeline-text-block">
-            <p>Mayo, inicio de operaciones.</p>
-            <p>Mayo, primer embarque.</p>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="container-2023 text-center mb-10">
-        <img src="/2023.png" alt="" class="year-label mb-6">
-        <div class="timeline-dots mb-4">
-          <img v-for="n in 7" :key="n" src="/ElipseVerde.png" alt="">
-        </div>
-        <p class="timeline-text">6 de noviembre del 2023, contenedor número 1000.</p>
-        <img src="/avocado.jpg" alt="" class="timeline-image mt-3">
-      </div>
-    </div>
-  </div>
-    -->
-
     <div class="timeline">
 <!--        2 0 1 9          -->
       <div class="year-label"><img src="/2019.png" alt="" class="year-label mb-6" data-aos="zoom-in"></div>
@@ -58,7 +10,7 @@
       <div class="timeline-dots" >
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
-
+      <!--  ITEM 2019-->
       <div class="timeline-item" data-aos="fade-down-right">
         <v-container>
           <v-row  class="otro-container-row">
@@ -76,18 +28,27 @@
         </v-container>
       </div>
 
+
+
       <div class="timeline-dots dos-dot" v-show="mostrarDot">
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
       
+
+
 <!--        2 0 2 2            -->
       <div class="year-label"><img src="/2022.png" alt="" class="year-label mb-6" data-aos="zoom-in"></div>
       <!-- DOTS  TRES -->
-      <div class="timeline-dots" >
+
+
+      <div class="timeline-dots dos-dot mt-1" v-show="mostrarDot">
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
+      
 
-      <!--     PRIMER ITEM     -->
+
+
+      <!--     PRIMER ITEM  2022   -->
         <div class="timeline-item item-2" data-aos="fade-down-right">
         
         <div class="timeline-content">
@@ -97,80 +58,105 @@
           </p>
         </div>
       </div>
+
+
+
       <!--    DOTS    CUATRO-->
-      <div class="timeline-dots" >
-          <span v-for="n in dotCount" :key="n" class="dot" ></span>
-      </div>
-      <div class="timeline-dots" >
+      <div class="timeline-dots dot-cuatro" v-show="mostrarDot">
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
 
-      <!--    SEGUNDO ITEM     -->
+
+      <!--    SEGUNDO ITEM   2022  -->
       <div class="timeline-item" data-aos="fade-down-right">
         <v-container style="margin-right: 10rem;">
           <v-row  class="otro-container-row">
-        
-              <v-col cols="12" sm="6">
+              <v-col cols="12" sm="10">
                   <img src="/img-2019.png" alt="" class="timeline-image img-piedra" />
-                  <p class="timeline-text txt-piedra">Mayo, inicio de las operaciones.</p>
-
+                  <p class="timeline-text txt-piedra">13 de mayo, inicio de las operaciones.</p>
               </v-col>
-              
-              <v-col cols="12" sm="6">
+              <v-col cols="12" sm="2">
               </v-col>
           </v-row>
         </v-container>
       </div>
-      
+
+
+  
       <!--  DOTS     CINCO style="margin-top: -63rem;"-->
       <div class="timeline-dots dos-dot" v-show="mostrarDot" >
           <span v-for="n in dotCount" :key="n" class="dot " ></span>
       </div>
-      <div class="timeline-dots" >
-          <span v-for="n in dotCount" :key="n" class="dot" ></span>
-      </div>
-      <!--     TERCER ITEM     -->
-        <div class="timeline-item item-2" data-aos="fade-down-right" style="margin-top: 30rem;">
-        
+
+
+    
+      <!--     TERCER ITEM   2022  -->
+        <div class="timeline-item item-2" data-aos="fade-down-right" style="margin-top: 0rem;">
+        <v-container class="my-5">
+          <v-row  class="otro-container-row">
         <div class="timeline-content">
-          <img src="/img-2023-1.png" alt="" class="timeline-image" />
-          <p class="timeline-text">
-            Mayo, primer embarque.
-          </p>
+              <v-col cols="12" sm="1">
+              </v-col>
+              <v-col cols="12" sm="6">
+                  <img src="/IMG-OTRA.JPG" alt="" class="timeline-image img-piedra" />
+                  <p class="timeline-text txt-piedra">Mayo, inicio de las operaciones.</p>
+              </v-col>
         </div>
+              
+          </v-row>
+        </v-container>
       </div>
+
       <!--    DOTS    SEIS-->
-      <div class="timeline-dots" style="margin-top: -34rem;">
+      <div class="timeline-dots dos-dot" v-show="mostrarDot">
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
-      <div class="timeline-dots mt-1" >
-          <span v-for="n in dotCount" :key="n" class="dot" ></span>
-      </div>
+      
     
       
 <!--        2 0 2 3            -->
       <div class="year-label"><img src="/2023.png" alt="" class="year-label mb-6" data-aos="zoom-in"></div>
-<div class="timeline-dots" >
+      <!-- DOTS SIETE -->
+      <div class="timeline-dots dos-dot" v-show="mostrarDot">
           <span v-for="n in dotCount" :key="n" class="dot" ></span>
       </div>
     
-      <div class="timeline-item item-2" data-aos="fade-down-right">
-        
-        <div class="timeline-content">
-          <img src="/avocado.jpg" alt="" class="timeline-image" />
-          <p class="timeline-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laborum asperiores odit laboriosam quos, numquam eos, eveniet veritatis architecto ullam necessitatibus expedita est, in temporibus odio recusandae perspiciatis soluta.
-          </p>
-        </div>
-      </div>
       
-
-      <div class="timeline-dots dos-dot" >
-          <span v-for="n in dotCount" :key="n" class="dot " ></span>
+       <!--  ITEM -->
+      <div class="timeline-item" data-aos="fade-down-right">
+        <v-container>
+          <v-row  class="otro-container-row">
+              <div class="timeline-content"></div>
+        
+              <v-col cols="12" sm="6">
+                  <img src="/img-2019.png" alt="" class="timeline-image img-piedra" />
+              </v-col>
+              
+              <v-col cols="12" sm="6">
+                  <p class="timeline-text txt-piedra">En Agosto se inicio la construcción del empaque de Grupo Avohit de México, en Morelia, Michoacán.</p>
+              </v-col>
+          </v-row>
+        </v-container>
       </div>
- 
 
-
+      <div class="timeline-dots dos-dot" v-show="mostrarDot">
+          <span v-for="n in dotCount" :key="n" class="dot" ></span>
+      </div>
+    </div>
+    <div>
+      <v-container>
+        <v-row>
+          <v-col cols="12" xl="5" order-sm="2" class="text-center">
+              primer col
+          </v-col>
+          <v-col cols="12" xl="2" order-sm="1" class="text-center mb-10 mt-10">
+            <span v-for="n in dotCount" :key="n" class="dot"> </span>
+          </v-col>
+          <v-col cols="12" xl="5" order-sm="3" class="text-center">
+              tercer col
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
@@ -182,7 +168,7 @@ const dotCount = ref(4)
 
 onMounted(() => {
   if (window.innerWidth <= 768) {
-    dotCount.value = 2
+    dotCount.value = 3
   }
 })
 
@@ -364,7 +350,6 @@ onUnmounted(() => {
   .timeline-content {
     flex: 2;
   }
- 
   
 }
 @media (min-width: 870px) {
@@ -376,7 +361,7 @@ onUnmounted(() => {
     margin-bottom: 4rem;
 }
 .img-piedra{
-    margin-right: 35rem;
+    margin-right: 1rem;
 }
 .txt-piedra{
     margin-left:10rem ;
@@ -384,8 +369,10 @@ onUnmounted(() => {
 .item-2{
     margin-right: -55rem;
 }
+.dot-cuadro{
+  margin-top: 10rem;
+  margin-top: -13rem;
+    margin-bottom: 4rem;
 }
-
-
-
+}
 </style>

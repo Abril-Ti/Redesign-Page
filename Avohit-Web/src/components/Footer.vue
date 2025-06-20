@@ -3,50 +3,50 @@
     <v-container fluid>
       <v-row no-gutters>
         <!--            Logo            -->
-        <v-col cols="12" md="3" class="text-center mt-1">
+        <v-col cols="12" md="3" class="text-center mt-10">
           <img src="/Logo-avohit-BLANCO.png" alt="Logo" class="logo-bl" />
         </v-col>
 
         <!--            Contacto y redes            -->
-        <v-col cols="12" md="5" class="text-center mb-3 contact-container">
+        <v-col cols="12" md="5" class="text-center mb-3 mt-10 contact-container">
             <h4 class="title-contacto">Contacto</h4>
             <v-row class="text-center">
                 <v-col cols="12" md="6" sm="6">
                     <div class="d-flex align-center justify-center mb-1">
-                        <img src="/phone.png" alt="Teléfono" class="icons" />
+                        <img src="/icon-phone-2.png" alt="Teléfono" class="icons" />
                         <p class="contact-text">+52 (443) 898-9099</p>
                     </div>
                 </v-col>
                 <v-col cols="12" md="6" sm="6">
                     <div class="d-flex align-center justify-center mb-1">
-                        <img src="/mail.png" alt="Correo" class="icons" />
+                        <img src="/icon-mail-2.png" alt="Correo" class="icons" />
                         <a href="mailto:direccion@avohit.com.mx" class="contact-text">direccion@avohit.com.mx</a>
                     </div>
                 </v-col>
             </v-row>
           
-            <h4>¡Síguenos en redes sociales!</h4>
+            <h4 class="mt-4">¡Síguenos en redes sociales!</h4>
             <div class="d-flex justify-center">
                 <a href="https://www.facebook.com/share/16HVJLtXSv/" target="_blank">
-                    <img src="/icon-facebook.png" alt="Facebook" class="icons-social-media" />
+                    <img src="/icon-facebook-2.png" alt="Facebook" class="icons-social-media" />
                 </a>
                 <a href="https://www.linkedin.com/company/grupoavohitdemexico/" target="_blank">
-                    <img src="/icon-linkedin.png" alt="LinkedIn" class="icons-social-media" />
+                    <img src="/icon-linkedin-2.png" alt="LinkedIn" class="icons-social-media" />
                 </a>
             </div>
         </v-col>
 
         <!--            Ubicación           -->
-        <v-col cols="12" md="4" class="text-center">
+        <v-col cols="12" md="4" class="text-center mb-1">
           <h4 class="title-ubi">Ubicación</h4>
           <div class="d-flex align-center justify-center">
-            <img src="/icon-maps.png" alt="Mapa" class="icons" />
+            <img src="/icon-maps-2.png" alt="Mapa" class="icons" />
             <p class="contact-text">
               Carr. Pátzcuaro - Morelia 16651 La Estancia, 58345 Morelia, Mich.
             </p>
           </div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1580.65458914937!2d-101.30071419321334!3d19.588388652752684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d75f2df8479d1%3A0x2b4196f1e6d7c278!2sGrupo%20Avohit%20de%20M%C3%A9xico!5e1!3m2!1ses-419!2smx!4v1749741262704!5m2!1ses-419!2smx"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7517.792436796482!2d-101.30228989176916!3d19.588946410782082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d75f2df8479d1%3A0x2b4196f1e6d7c278!2sGrupo%20Avohit%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1750430285830!5m2!1ses!2smx"
             width="100%" height="180" style="border:0;" allowfullscreen loading="lazy"
           ></iframe>
         </v-col>
@@ -67,7 +67,7 @@ const currentYear = new Date().getFullYear();
 <style scoped>
 .footer-container {
     position: relative;
-    background-color: #276918;
+    background-color: #193113;
     color: white;
     overflow: hidden;
     z-index: 1;
