@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="text-center">
+  <div  class="text-center">
+    <div >
       <h2 class="montserrat-regular title-line mt-11">BIENVENIDOS</h2>
       <div class="decorative-line"></div>
 
@@ -17,10 +17,10 @@
       </div>
 
       <div class="v-sheet d-flex flex-wrap-reverse mb-6 align-center justify-center">
-        <p class="txt-description text-content">
+        <p class="txt-description text-content desc-2">
           Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.
         </p>
-        <img src="/workers.jpg" alt="" class="img-content">
+        <img src="/workers.jpg" alt="" class="img-content img-2">
       </div>
 
       <div class="v-sheet d-flex flex-wrap mb-6 align-center justify-center">
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Instalaciones -->
-    <div>
+    <div class="text-center">
       <h2 class="montserrat-regular title-line text-center">CONOCE NUESTRAS INSTALACIONES</h2>
       <div class="decorative-line"></div>
       <p class="txt-description mb-10 text-center">Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
@@ -127,19 +127,6 @@ li {
   padding: 1rem;
 }
 
-.txt-description {
-  margin-top: 3rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.decorative-line {
-  width: 200px;
-  height: 2px;
-  background-color: #000000;
-  margin: 0 auto 1.5rem auto;
-}
-
 .list-certificaciones {
   list-style: none;
   padding-left: 0;
@@ -174,14 +161,18 @@ li {
   .list-certificaciones {
     text-align: center;
   }
+ 
+  .img-2{
+    margin-bottom: 8rem;
+  }
 }
 
 @media (max-width: 600px) {
   .list-certificaciones {
-    max-width: 400px;
+    max-width: 370px;
   }
   .img-content {
-    width: 200px;
+    width: 300px;
   }
 }
 </style>

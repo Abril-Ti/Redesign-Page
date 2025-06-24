@@ -24,18 +24,21 @@
                 <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link" @click="cerrarMenuYSubir">INICIO</RouterLink></div>
                 <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">NOSOTROS</RouterLink></div>
                 <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">COMPROMISO</RouterLink></div>
-                <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>
+                <!-- <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
                 <div class="v-sheet ma-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button>CONTACTO</button></RouterLink></div>
             </div>
 
-        <!-- Menú colapsable SOLO para móvil -->
-            <transition name="slide-down">
+      
+        </div>
+        <div>
+  <!-- Menú colapsable SOLO para móvil -->
+            <transition name="slide-down" class="text-center mb-4">
                 <div v-show="mostrarMenu" class="d-md-none flex-column nav-items-mobile">
                     <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link"  @click="cerrarMenuYSubir">INICIO</RouterLink></div>
                     <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">NOSOTROS</RouterLink></div>
                     <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">COMPROMISO</RouterLink></div>
-                    <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>
-                    <div class="v-sheet ma-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button>CONTACTO</button></RouterLink></div>
+                    <!--                    <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
+                    <div class="v-sheet ma-2 mb-4"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="mb-2">CONTACTO</button></RouterLink></div>
                 </div>
             </transition>
         </div>
@@ -205,8 +208,8 @@ button:hover {
   opacity: 1;
 }
 .menu-toggle {
-  width: 30px;
-  height: 22px;
+  width: 40px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -238,3 +241,5 @@ button:hover {
 }
 
 </style>
+
+

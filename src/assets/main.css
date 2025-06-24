@@ -38,6 +38,8 @@ hr{
   font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   text-align: justify;
+  margin-top: 3rem;
+    line-height: 1.6;
 }
 .v-sheet{
     background: none;
