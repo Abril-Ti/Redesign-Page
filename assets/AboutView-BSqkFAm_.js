@@ -1,1 +1,0 @@
-import{_ as e,c as s,a as t,o as r}from"./index-D8KOddKp.js";const a={},c={class:"about"};function n(_,o){return r(),s("div",c,o[0]||(o[0]=[t("h1",null,"Nosotros",-1)]))}const d=e(a,[["render",n]]);export{d as default};
