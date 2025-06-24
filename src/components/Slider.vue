@@ -1,12 +1,12 @@
 <template>
   <div class="slider-container mt-6">
-    <!-- Botón izquierdo -->
-    <button class="nav-button left text-center" @click="prev">
+
+    <!-- BOTONES LATERALES - ESCRITORIO -->
+    <button class="nav-button left d-none d-md-block" @click="prev">
       <img src="/navigate_before.png" alt="Anterior" />
     </button>
 
-    <!-- SLIDER -->
-    <div class="slider mb-10">
+    <div class="slider mb-2">
       <div
         v-for="(img, index) in images"
         :key="index"
@@ -22,56 +22,47 @@
       </div>
     </div>
 
-    <!-- Botón derecho -->
-    <button class="nav-button right" @click="next">
+    <button class="nav-button right d-none d-md-block" @click="next">
       <img src="/navigate_next.png" alt="Siguiente" />
     </button>
 
-    <!-- Modal -->
-    <div v-if="showModal" class="modal-overlay" @click.self="closeModal">
-      <div class="modal-content">
-        <button class="nav-btn modal-left" @click.stop="prev">
-          <img src="/navigate_before.png" alt="Anterior" />
-        </button>
-
-        <img :src="images[current].src" :alt="images[current].alt" />
-
-        <button class="nav-btn modal-right" @click.stop="next">
-          <img src="/navigate_next.png" alt="Siguiente" />
-        </button>
-
-        <button class="close-btn" @click="closeModal">✖</button>
-      </div>
-  </div>
-
+    <!-- BOTONES INFERIORES - MÓVIL -->
+    <div class="nav-buttons-wrapper d-flex d-md-none justify-center mt-4">
+      <button class="nav-button" @click="prev">
+        <img src="/navigate_before.png" alt="Anterior" />
+      </button>
+      <button class="nav-button" @click="next">
+        <img src="/navigate_next.png" alt="Siguiente" />
+      </button>
+    </div>
 
     <!-- Contador -->
     <div class="counter">
       {{ current + 1 }} / {{ images.length }}
-        </div>
-        <div class="dot-progress">
-            <span
-                v-for="(img, index) in images"
-                :key="index"
-                :class="['dot', { active: index === current }]"
-                @click="goTo(index)"
-              ></span>
-      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="dot-progress">
+      <span
+        v-for="(img, index) in images"
+        :key="index"
+        :class="['dot', { active: index === current }]"
+        @click="goTo(index)"
+      ></span>
+    </div>
   </div>
 </template>
-
 
 <script>
 export default {
   data() {
     return {
       current: 0,
-      showModal: false,
       images: [
         { src: 'Slider/Slide0.JPG', alt: 'Imagen 1' },
         { src: 'Slider/Slide1.JPG', alt: 'Imagen 2' },
         { src: 'Slider/Slide2.JPG', alt: 'Imagen 3' },
-        { src: 'Slider/Slide3.JPG', alt: 'imagen 4' },
+        { src: 'Slider/Slide3.JPG', alt: 'Imagen 4' },
         { src: 'Slider/Slide4.JPG', alt: 'Imagen 5' },
         { src: 'Slider/Slide5.JPG', alt: 'Imagen 6' },
       ]
@@ -87,30 +78,10 @@ export default {
     goTo(index) {
       this.current = index;
     },
-    openModal() {
-      this.showModal = true;
-      window.addEventListener('keydown', this.handleKeydown);
-    },
-    closeModal() {
-      this.showModal = false;
-      window.removeEventListener('keydown', this.handleKeydown);
-    },
-    handleKeydown(e) {
-  if (!this.showModal) return;
-
-  if (e.key === 'ArrowRight') {
-    this.next();
-  } else if (e.key === 'ArrowLeft') {
-    this.prev();
-  } else if (e.key === 'Escape') {
-    this.closeModal();
-  }
-}
-
+    openModal() {},
   }
 };
 </script>
-
 
 <style scoped>
 .slider-container {
@@ -119,7 +90,6 @@ export default {
   margin: auto;
   position: relative;
   padding: 1rem;
-  margin-bottom: 15rem;
 }
 
 .slider {
@@ -161,102 +131,27 @@ export default {
   z-index: 1;
 }
 
-/* Botones de navegación a los lados */
 .nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 5;
   padding: 0.5rem;
 }
 
 .nav-button.left {
-  right: 65rem;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-button.right {
-  left: 65rem;
-}
-
-/* Modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.modal-content {
-  position: relative;
-  max-width: 95%;
-  max-height: 95%;
-}
-
-.modal-content img {
-  width: 50%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.close-btn {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  background: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Contador */
-.counter {
-  margin-top: 1rem;
-  font-weight: 600;
-  color: #555;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .slide {
-    width: 90%;
-  }
-  .slide.left {
-    left: 0px;
-  }
-  .slide.right {
-    left: 0px;
-  }
-  .nav-button.left {
-    left: 6rem;
-    margin-top:5rem ;
-  }
-  .nav-button.right {
-    left: 10rem;
-    margin-top:5rem ;
-  }
-  .slider {
-     height: 280px;
-  }
-  .modal-content img {
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-}
-}
-/* radio boton */
 .dot-progress {
   display: flex;
   justify-content: center;
@@ -277,33 +172,26 @@ export default {
   background-color: #276918;
   transform: scale(1.2);
 }
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
-  padding: 10px;
-}
 
-.modal-left {
-  left: -50px;
+.counter {
+  margin-top: 5rem;
+  font-weight: 600;
+  color: #555;
 }
-
-.modal-right {
-  right: -50px;
-}
-
-@media (max-width: 768px) {
-  .modal-left {
-    left: 5px;
+@media (max-width: 767px) {
+  .counter{
+    margin-top: 3px;
   }
-  .modal-right {
-    right: 5px;
+  .slider{
+    height: 155px;
+  }
+  .slide.left{
+    left: -2%;
+  }
+  .slide.right{
+    left: 30%;
   }
 }
+
 
 </style>
-
