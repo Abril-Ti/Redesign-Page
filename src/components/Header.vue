@@ -76,6 +76,7 @@ img {
   color: black;
   letter-spacing: 4px;
   font-size: 14px;
+  margin-left: 3rem;
 }
 
 button {
@@ -85,6 +86,7 @@ button {
   color: white !important;
   border-radius: 18px;
   letter-spacing: 3px;
+  margin-left: 3rem;
 }
 
 button:hover {
