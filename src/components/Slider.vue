@@ -1,7 +1,7 @@
 <template>
   <div class="slider-container mt-6">
     <!-- Botón izquierdo -->
-    <button class="nav-button left" @click="prev">
+    <button class="nav-button left text-center" @click="prev">
       <img src="/navigate_before.png" alt="Anterior" />
     </button>
 
@@ -29,35 +29,34 @@
 
     <!-- Modal -->
     <div v-if="showModal" class="modal-overlay" @click.self="closeModal">
-  <div class="modal-content">
-    <button class="nav-btn modal-left" @click.stop="prev">
-      <img src="/navigate_before.png" alt="Anterior" />
-    </button>
+      <div class="modal-content">
+        <button class="nav-btn modal-left" @click.stop="prev">
+          <img src="/navigate_before.png" alt="Anterior" />
+        </button>
 
-    <img :src="images[current].src" :alt="images[current].alt" />
+        <img :src="images[current].src" :alt="images[current].alt" />
 
-    <button class="nav-btn modal-right" @click.stop="next">
-      <img src="/navigate_next.png" alt="Siguiente" />
-    </button>
+        <button class="nav-btn modal-right" @click.stop="next">
+          <img src="/navigate_next.png" alt="Siguiente" />
+        </button>
 
-    <button class="close-btn" @click="closeModal">✖</button>
+        <button class="close-btn" @click="closeModal">✖</button>
+      </div>
   </div>
-</div>
 
 
     <!-- Contador -->
     <div class="counter">
       {{ current + 1 }} / {{ images.length }}
-    </div>
-    <div class="dot-progress">
-  
-        <span
-            v-for="(img, index) in images"
-            :key="index"
-            :class="['dot', { active: index === current }]"
-            @click="goTo(index)"
-          ></span>
-</div>
+        </div>
+        <div class="dot-progress">
+            <span
+                v-for="(img, index) in images"
+                :key="index"
+                :class="['dot', { active: index === current }]"
+                @click="goTo(index)"
+              ></span>
+      </div>
   </div>
 </template>
 
@@ -251,6 +250,11 @@ export default {
   .slider {
      height: 280px;
   }
+  .modal-content img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
 }
 /* radio boton */
 .dot-progress {
