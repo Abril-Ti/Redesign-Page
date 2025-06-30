@@ -1,7 +1,8 @@
 <template>
     <div>
-                    <h2 class="text-center montserrat-regular" style="margin-top: 10rem;">NOSOTROS</h2> 
- <div class="decorative-line"></div>
+        <h2 class="text-center montserrat-regular" style="margin-top: 10rem;">NOSOTROS</h2> 
+        <div class="decorative-line"></div>
+        
         <v-container>
             <v-row>
                 <v-col>

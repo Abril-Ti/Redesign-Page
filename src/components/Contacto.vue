@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <h2 class="text-center montserrat-regular">PONTE EN CONTACTO</h2>
+    <h2 class="text-center montserrat-regular">CONTACTANOS</h2>
     <div class="decorative-line"></div>
 
     <div class="contact-card">
