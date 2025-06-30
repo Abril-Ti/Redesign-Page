@@ -39,8 +39,8 @@
         <!--            Ubicación           -->
         <v-col cols="12" md="4" class="text-center mb-1">
           <h4 class="title-ubi">Ubicación</h4>
-          <div class="d-flex align-center justify-center">
-            <img src="/icon-maps-2.png" alt="Mapa" class="icons" />
+          <div class="d-flex align-center justify-center" style="margin-bottom: 8px;">
+            <img src="/icon-ubi.png" alt="Mapa" class="icons" />
             <p class="contact-text">
               Carr. Pátzcuaro - Morelia 16651 La Estancia, 58345 Morelia, Mich.
             </p>

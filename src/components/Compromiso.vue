@@ -14,19 +14,19 @@
         </v-container>
 
   
-    <div class="container-vision">
-        <h2 class="montserrat-regular mt-10 txt-val">VISIÓN </h2>
-        <div class="decorative-line" style="margin: -3rem auto 1.5rem 4rem;"></div>
+    <div class="container-vision text-center">
+        <h2 class="montserrat-regular txt-val">VISIÓN </h2>
+        <div class="decorative-line"></div>
         <p class="txt-description txt-val">Nuestra misión es ser una empresa completamente comprometida desde el cultivo, cosecha, empaque y traslado del aguacate hasta el contacto con el cliente, con los estándares más exigentes en la calidad e inocuidad, mediante la tecnología más vanguardista del mercado, satisfaciendo así el paladar por medio de la calidad en todo el mundo, sin distinción de temporadas.</p>
     </div>
-    <div class="container-mision">
+    <div class="container-mision text-center">
         <h2 class="montserrat-regular mt-10 txt-val">MISIÓN</h2>
-        <div class="decorative-line" style="margin: -3rem auto 1.5rem 4rem;"></div>
+        <div class="decorative-line"></div>
         <p class="txt-description txt-val">Crecer como la empresa líder en el mercado Internacional con el proceso de trazabilidad más íntegro, que preserva la calidad desde el cultivo hasta la exportación, por medio de la tecnología más vanguardista, obteniendo así la mayor eficiencia confianza y capacidad de acuerdo a la demanda de cualquier temporada.</p>
     </div>
 
     <div class="container-valores">
-        <h2 class="text-center montserrat-regular mt-10">NUESTROS VALORES</h2>
+        <h2 class="text-center montserrat-regular">NUESTROS VALORES</h2>
         <div class="decorative-line"></div>
 
         <p class="txt-description txt-val">Socialmente somos una empresa que no distingue cuestiones culturales, creencias, incluyendo diversidad de preferencias en la sociedad, caracterizándonos principalmente por:</p>
@@ -59,9 +59,7 @@ const fotos = [
 </script>
 <style scoped>
 .txt-val{
-    padding: 10px;
-    margin: 3rem;
-
+    padding: 20px;
 }
 .icon-valor{
     width: 200px;

@@ -1,42 +1,60 @@
 <template>
   <div  class="text-center">
-    <div >
-      <h2 class="montserrat-regular title-line mt-11">BIENVENIDOS</h2>
-      <div class="decorative-line"></div>
+    <div>
+      <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
+      <div class="decorative-line" style="width: 400px;"></div>
 
-      <p class="txt-description mb-10 text-center">
+      <p class="txt-description mb-10 txt-1">
         Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
       </p>
 
       <!-- Secciones de contenido alternado -->
-      <div class="v-sheet d-flex flex-wrap mb-6 align-center justify-center">
-        <img src="/Aguacate-malla.jpg" alt="" class="img-content">
-        <p class="txt-description text-content">
-          Nos esforzamos por ofrecer al mercado nacional e internacional un producto de primera calidad, con un sabor excepcional, altos estándares de inocuidad y un proceso de trazabilidad confiable de principio a fin.
-        </p>
-      </div>
+       <v-container class="justify-center">
+        <v-row>
+          <v-col cols="12" md="6" sm="6">
+            <img src="/Aguacate-malla.jpg" alt="" class="img-content">
+          </v-col>
+          <v-col cols="12" md="6" sm="6">
+            <p class="txt-description text-content ma-7">
+              Nos esforzamos por ofrecer al mercado nacional e internacional un producto de primera calidad, con un sabor excepcional, altos estándares de inocuidad y un proceso de trazabilidad confiable de principio a fin.
+            </p>
+          </v-col>
+        </v-row>
+       </v-container>
 
-      <div class="v-sheet d-flex flex-wrap-reverse mb-6 align-center justify-center">
-        <p class="txt-description text-content desc-2">
-          Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.
-        </p>
-        <img src="/workers.jpg" alt="" class="img-content img-2">
-      </div>
+       <v-container class="justify-center">
+        <v-row>
+          <v-col cols="12" md="6" sm="6">
+            <p class="txt-description text-content desc-2 ma-7">
+              Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.
+           </p>
+          </v-col>
+          <v-col cols="12" md="6" sm="6">
+            <img src="/workers.jpg" alt="" class="img-content">
+          </v-col>
+        </v-row>
+       </v-container>
 
-      <div class="v-sheet d-flex flex-wrap mb-6 align-center justify-center">
-        <img src="/varios.jpg" alt="" class="img-content">
-        <p class="txt-description text-content">
-          Al mismo tiempo, impulsamos el desarrollo y la prosperidad de las comunidades donde operamos, reafirmando nuestro compromiso social y ambiental.
-        </p>
-      </div>
+       <v-container>
+        <v-row>
+          <v-col cols="12" md="6" sm="6">
+              <img src="/varios.jpg" alt="" class="img-content">
+          </v-col>
+          <v-col cols="12" md="6" sm="6">
+              <p class="txt-description text-content">
+                Al mismo tiempo, impulsamos el desarrollo y la prosperidad de las comunidades donde operamos, reafirmando nuestro compromiso social y ambiental.
+              </p>
+          </v-col>
+        </v-row>
+       </v-container>
     </div>
 
     
 
     <!-- Carousel -->
     <div class="carousel-container text-center">
-      <h2 class="montserrat-regular title-line" style="margin-top: 10rem;">DESCUBRE</h2>
-      <div class="decorative-line"></div>
+      <h2 class="montserrat-regular title-line">DESCUBRE</h2>
+      <div class="decorative-line" style="width: 400px;"></div>
 
       <p class="txt-description mb-10 text-center">
         ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
@@ -47,7 +65,7 @@
     <!-- Certificaciones -->
     <div class="certificaciones-container text-center mt-10" style="margin-bottom: 10rem;">
       <h2 class="montserrat-regular title-line">CERTIFICACIONES</h2>
-      <div class="decorative-line"></div>
+      <div class="decorative-line" style="width: 480px;"></div>
 
       <div class="v-sheet d-flex flex-wrap-reverse align-center justify-center mb-6">
         <ul class="text-start list-certificaciones txt-description p-5">
@@ -64,7 +82,7 @@
     <!-- Instalaciones -->
     <div class="text-center">
       <h2 class="montserrat-regular title-line text-center">CONOCE NUESTRAS INSTALACIONES</h2>
-      <div class="decorative-line"></div>
+      <div class="decorative-line" style="width: 990px;"></div>
       <p class="txt-description mb-10 text-center">Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
       <!-- Sección de video -->
     <div ref="videoSection" class="video-section">
@@ -120,17 +138,34 @@ li {
 .img-content {
   width: 400px;
   max-width: 100%;
+  object-fit: cover;
+  margin: 1rem;
 }
 
 .text-content {
   max-width: 700px;
   padding: 1rem;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.v-sheet {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .list-certificaciones {
   list-style: none;
   padding-left: 0;
   max-width: 540px;
+  margin: 1rem;
+  text-align: justify;
 }
 
 .list-certificaciones li {
@@ -142,7 +177,7 @@ li {
   width: 100%;
   max-width: 1080px;
   margin: 5rem auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .promo-video {
@@ -152,18 +187,50 @@ li {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.txt-description {
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 75%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.txt-1{
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .v-sheet {
     flex-direction: column !important;
-  }
-
-  .txt-description,
-  .list-certificaciones {
+    align-items: center;
+    padding: 2rem 1rem;
     text-align: center;
   }
- 
-  .img-2{
-    margin-bottom: 8rem;
+.txt-1{
+  text-align: justify;
+}
+  .text-content {
+    max-width: 90%;
+    text-align: justify;
+  }
+
+  .img-content {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .img-2 {
+    margin-bottom: 2rem;
+  }
+
+  .list-certificaciones {
+    text-align: justify;
+    margin-top: 2rem;
+  }
+
+  .txt-description {
+    text-align: justify;
   }
 }
 
@@ -171,8 +238,11 @@ li {
   .list-certificaciones {
     max-width: 370px;
   }
+
   .img-content {
     width: 300px;
   }
 }
+
 </style>
+
