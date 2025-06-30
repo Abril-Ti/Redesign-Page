@@ -1,154 +1,190 @@
 <template>
-  <div class="timeline-container">
-    <!-- 2019 -->
-    <div class="timeline-section">
-      <div class="timeline-year">2019</div>
-      <div class="timeline-dots" :class="{'mobile-dots': isMobile}">
-        <span v-for="n in (isMobile ? 2 : 7)" :key="n" class="dot"></span>
-      </div>
-      <div class="timeline-content">
-        <img src="/img-2019.png" class="timeline-img" alt="2019" />
-        <p class="timeline-text">
-          En agosto se colocó la primera piedra de la Mega Planta agroindustrial de AvoHit, en Morelia Michoacán.
-        </p>
-      </div>
+  <div class="text-center timeline-container">
+    <h2 class="text-center montserrat-regular">GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO</h2>
+    <div class="decorative-line mb-10 mx-auto"></div>
+
+    <!-- Año 2019 -->
+    <div class="year-label">
+      <img src="/Timeline/2019.png" alt="" class="year-label mb-6" data-aos="zoom-in">
     </div>
 
-    <!-- 2022 -->
-    <div class="timeline-section">
-      <div class="timeline-year">2022</div>
-      <div class="timeline-dots" :class="{'mobile-dots': isMobile}">
-        <span v-for="n in (isMobile ? 2 : 14)" :key="n" class="dot"></span>
-      </div>
-      <div class="timeline-content intercalated">
+    <v-timeline align="center">
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+
+      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
+        <template #opposite>
+          <img src="/Timeline/img-2019.png" style="width: 496px; margin-left: 5rem;" class="d-none d-md-block" />
+        </template>
         <div>
-          <img src="/img-2019.png" class="timeline-img" alt="2022-1" />
-          <p class="timeline-text">Febrero, inauguración del empaque.</p>
+          <!--<h5 class="sub">La primera Piedra</h5>  -->
+          
+          <p class="txt-description" style="margin-right: 5rem;">
+            Inicio la construcción del empaque de Grupo Avohit de México, en Morelia, Michoacán.
+          </p>
         </div>
-        <div>
-          <img src="/img-2019.png" class="timeline-img" alt="2022-2" />
-          <p class="timeline-text">Mayo, inicio de operaciones.</p>
-        </div>
-        <div>
-          <img src="/img-2019.png" class="timeline-img" alt="2022-3" />
-          <p class="timeline-text">Mayo, primer embarque.</p>
-        </div>
-      </div>
+      </v-timeline-item>
+
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+    </v-timeline>
+
+    <!-- Año 2022 -->
+    <div class="year-label">
+      <img src="/Timeline/2022.png" alt="" class="year-label mb-6" data-aos="zoom-in">
     </div>
 
-    <!-- 2023 -->
-    <div class="timeline-section">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-dots" :class="{'mobile-dots': isMobile}">
-        <span v-for="n in (isMobile ? 2 : 7)" :key="n" class="dot"></span>
-      </div>
-      <div class="timeline-content">
-        <img src="/img-2019.png" class="timeline-img" alt="2023" />
-        <p class="timeline-text">6 de noviembre del 2023: contenedor número 1000.</p>
-      </div>
+    <v-timeline align="center">
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+
+      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
+        <template #opposite>
+          <img src="/Timeline/img-2023-1.png" style="width: 480px; margin-left: 5rem;" class="d-none d-md-block" />
+        </template>
+        <div>
+          <!--<h6 class="font-weight-bold">Febrero</h6>-->
+          
+          <p class="txt-description" style="margin-right: 5rem;">
+            Inaguración del empaque.
+          </p>
+        </div>
+      </v-timeline-item>
+
+      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
+        <template #opposite>
+          <img src="/Timeline/img-2023-2.JPG" style="width: 480px; margin-left: 5rem;" class="d-none d-md-block" />
+        </template>
+        <div>
+          <!-- <h6 class="font-weight-bold">Mayo</h6> -->
+          
+          <p class="txt-description" style="margin-right: 5rem;">
+            Inicio de las operaciones
+          </p>
+        </div>
+      </v-timeline-item>
+
+      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
+        <template #opposite>
+          <img src="/Timeline/img-2023-3.JPG" style="width: 480px; margin-left: 5rem;" class="d-none d-md-block" />
+        </template>
+        <div>
+          <!--<h6 class="font-weight-bold">Mayo</h6>  -->
+          
+          <p class="txt-description" style="margin-right: 1px;">
+            Primer embarque
+          </p>
+        </div>
+      </v-timeline-item>
+
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+    </v-timeline>
+
+    <!-- Año 2023 -->
+    <div class="year-label">
+      <img src="/Timeline/2023.png" alt="" class="year-label mb-6" data-aos="zoom-in">
     </div>
+
+    <v-timeline align="center">
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+
+      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
+        <div>
+          <!-- <h6 class="font-weight-bold">Noviembre</h6> -->
+          
+          <p class="txt-description" style="margin-right: 5rem;">
+            Contenedor número 1000.
+          </p>
+        </div>
+        <template #opposite>
+          <img src="/Timeline/img-2024.JPG" style="width: 480px; margin-left: 5rem;" class="d-none d-md-block" />
+        </template>
+      </v-timeline-item>
+
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+      <v-timeline-item dot-color="#9cbd98"/>
+    </v-timeline>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-
-const isMobile = ref(false);
-
-onMounted(() => {
-  const checkMobile = () => {
-    isMobile.value = window.innerWidth < 768;
-  };
-  checkMobile();
-  window.addEventListener('resize', checkMobile);
-});
 </script>
 
 <style scoped>
 .timeline-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1rem;
+  margin-top: 10rem;
 }
 
-.timeline-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.timeline-year {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #276918;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.5rem;
+.v-timeline-item img {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 1rem;
 }
 
-.timeline-dots {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 1.5rem;
+.v-timeline-item p {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.dot {
-  width: 12px;
-  height: 12px;
+.v-timeline-item {
+  text-align: center;
+}
+
+/* Oculta líneas entre dots */
+.v-timeline-item-divider,
+.v-timeline-divider__before,
+.v-timeline-divider__after {
+  display: none !important;
+}
+
+/* Animación de resplandor en los dots */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0px 0 rgba(39, 105, 24, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px 6px rgba(39, 105, 24, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0px 0 rgba(39, 105, 24, 0.4);
+  }
+}
+
+.v-timeline-divider__dot--size-default .v-timeline-divider__inner-dot {
+  animation: pulse-glow 2s infinite;
   border-radius: 50%;
-  background-color: #42b983;
 }
 
-.timeline-content {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 900px;
-}
-
-.timeline-img {
-  width: 480px;
-  max-width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.timeline-text {
-  max-width: 480px;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-.intercalated > div {
-  margin-bottom: 2rem;
-}
-
+/* Responsividad móvil */
 @media (max-width: 768px) {
-  .timeline-content {
-    flex-direction: column;
+  .v-timeline-item {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
-  .timeline-img,
-  .timeline-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .mobile-dots {
-    flex-direction: row;
-    gap: 12px;
-    margin: 1rem 0;
+  .decorative-line{
+    width: 150px;
   }
 }
+
+.v-timeline {
+  --v-timeline-line-thickness: 0 !important;
+  
+}
+.sub{
+  font-size: 15px;
+}
+.decorative-line{
+  width: 500px;
+}
+
 </style>

@@ -52,12 +52,14 @@
          
         </div>
 
-        <TimeLine/>
+        
+        <timeline2/>
        
     </div>
 </template>
 <script setup>
 import TimeLine from '../components/TimeLine.vue';
+import Timeline2 from './Timeline2.vue'
 </script>
 <style scoped>
 .img-content{
