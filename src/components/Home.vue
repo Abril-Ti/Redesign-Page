@@ -3,7 +3,7 @@
     <div>
       <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
       <div class="decorative-line line-bienv"></div>
-      <div style="display:flex; justify-content: center; align-content: center; margin: 5rem;">
+      <div class="text-container">
         <p class="txt-description mb-10 txt-1">
           Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
         </p>
@@ -34,7 +34,7 @@
         </v-row>
        </v-container>
 
-       <v-container>
+       <v-container class="justify-center">
         <v-row>
           <v-col cols="12" md="6" sm="6">
               <img src="/varios.jpg" alt="" class="img-content">
@@ -53,9 +53,12 @@
       <h2 class="montserrat-regular title-line">DESCUBRE</h2>
       <div class="decorative-line line-desc"></div>
 
-      <p class="txt-description mb-10 text-center">
-        ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
-      </p>
+      <div style="display: flex; justify-content: center; align-content: center; margin: 5rem;">
+        <p class="txt-description mb-10 text-center">
+          ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
+        </p>
+      </div>
+      
       <SliderComponent />
     </div>
 
@@ -64,6 +67,9 @@
       <h2 class="montserrat-regular title-line">CERTIFICACIONES</h2>
       <div class="decorative-line line-cert"></div>
 
+        <div class="text-container">
+          <p class="txt-description mb-10 text-center">Nuestras certificaciones respaldan el compromiso constante con la mejora continua y la confianza de nuestros socios comerciales a nivel internacional.</p>
+        </div>
       <div class="d-flex flex-wrap-reverse align-center justify-center mb-6">
         <ul class="text-start list-certificaciones txt-description p-5">
           <li>🥑 Programa de Exportaciones de Aguacate Hass de México a los E.U.A.</li>
@@ -80,7 +86,9 @@
     <div class="text-center">
       <h2 class="montserrat-regular title-line text-center">NUESTRAS INSTALACIONES</h2>
       <div class="decorative-line line-inst"></div>
-      <p class="txt-description mb-10 text-center">Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
+      <div class="text-container">
+        <p class="txt-description mb-10 text-center">Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
+      </div>
       <!-- Sección de video -->
     <div ref="videoSection" class="video-section">
       <video
@@ -227,6 +235,12 @@ li {
 }
 .line-inst{
   width: 690px;
+}
+.text-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 4rem 2rem;
 }
 </style>
 
