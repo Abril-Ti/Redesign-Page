@@ -5,7 +5,7 @@
       <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
       <div class="decorative-line line-bienv"></div>
       <div class="text-container">
-        <p class="txt-description">
+        <p class="txt-description text-center">
           Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
         </p>
       </div>
@@ -22,7 +22,7 @@
           </v-col>
         </v-row>
 
-        <v-row class="align-start section-row" dense>
+        <v-row class="align-start section-row mb-5" dense>
           <v-col cols="12" md="6" order-md="2" order="1">
             <img src="/workers.jpg" alt="Trabajadores" class="img-content" />
           </v-col>
@@ -33,7 +33,7 @@
           </v-col>
         </v-row>
 
-        <v-row class="align-start section-row" dense>
+        <v-row class="align-start section-row mb-5 mt-5" dense>
           <v-col cols="12" md="6" order-md="1" order="1">
             <img src="/varios.jpg" alt="Aguacates varios" class="img-content" />
           </v-col>
