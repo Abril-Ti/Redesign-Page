@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h2 class="text-center montserrat-regular" style="margin-top: 10rem;">NUESTRO COMPROMISO</h2> 
+    <h2 class="text-center montserrat-regular">NUESTRO COMPROMISO</h2> 
     <div class="decorative-line"></div>
     <v-container>
             <v-row>
