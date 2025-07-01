@@ -25,22 +25,20 @@ h2{
   font-style: normal;
 }
 .decorative-line {
-  width: 200px;
+  width: 250px;
   height: 2px;
   background-color: #000000;
   margin: 0 auto 1.5rem auto;
 }
-hr{
-  left: 50%;
-}
+
 
 .txt-description{
   font-size: 23px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   text-align: justify;
-  margin-top: 3rem;
-    line-height: 1.6;
+  margin-top: 1rem;
+  line-height: 1.6;
 }
 .v-sheet{
     background: none;

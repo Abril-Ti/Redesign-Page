@@ -2,13 +2,12 @@
   <div  class="text-center">
     <div>
       <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
-      <div class="decorative-line" style="width: 400px;"></div>
-
-      <p class="txt-description mb-10 txt-1">
-        Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
-      </p>
-
-      <!-- Secciones de contenido alternado -->
+      <div class="decorative-line line-bienv"></div>
+      <div style="display:flex; justify-content: center; align-content: center; margin: 5rem;">
+        <p class="txt-description mb-10 txt-1">
+          Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
+        </p>
+      </div>
        <v-container class="justify-center">
         <v-row>
           <v-col cols="12" md="6" sm="6">
@@ -49,12 +48,10 @@
        </v-container>
     </div>
 
-    
-
     <!-- Carousel -->
     <div class="carousel-container text-center">
       <h2 class="montserrat-regular title-line">DESCUBRE</h2>
-      <div class="decorative-line" style="width: 400px;"></div>
+      <div class="decorative-line line-desc"></div>
 
       <p class="txt-description mb-10 text-center">
         ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
@@ -65,9 +62,9 @@
     <!-- Certificaciones -->
     <div class="certificaciones-container text-center mt-10" style="margin-bottom: 10rem;">
       <h2 class="montserrat-regular title-line">CERTIFICACIONES</h2>
-      <div class="decorative-line" style="width: 480px;"></div>
+      <div class="decorative-line line-cert"></div>
 
-      <div class="v-sheet d-flex flex-wrap-reverse align-center justify-center mb-6">
+      <div class="d-flex flex-wrap-reverse align-center justify-center mb-6">
         <ul class="text-start list-certificaciones txt-description p-5">
           <li>🥑 Programa de Exportaciones de Aguacate Hass de México a los E.U.A.</li>
           <li>🥑 Norma GLOBALG.A.P. para Cadena de Custodia (CoC).</li>
@@ -81,8 +78,8 @@
 
     <!-- Instalaciones -->
     <div class="text-center">
-      <h2 class="montserrat-regular title-line text-center">CONOCE NUESTRAS INSTALACIONES</h2>
-      <div class="decorative-line" style="width: 990px;"></div>
+      <h2 class="montserrat-regular title-line text-center">NUESTRAS INSTALACIONES</h2>
+      <div class="decorative-line line-inst"></div>
       <p class="txt-description mb-10 text-center">Somos expertos en empacar la mejor elección de sabor para tu hogar, manejamos la mejor calidad, permítenos hacerte experimentar el verdadero sabor del aguacate y darte un golpe de sabor.</p>
       <!-- Sección de video -->
     <div ref="videoSection" class="video-section">
@@ -144,21 +141,9 @@ li {
 
 .text-content {
   max-width: 700px;
-  padding: 1rem;
-  text-align: justify;
-  margin: 1rem;
 }
 
-.v-sheet {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
+
 
 .list-certificaciones {
   list-style: none;
@@ -187,13 +172,7 @@ li {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.txt-description {
-  line-height: 1.6;
-  text-align: justify;
-  max-width: 75%;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+
 .txt-1{
   text-align: center;
 }
@@ -201,12 +180,7 @@ li {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .v-sheet {
-    flex-direction: column !important;
-    align-items: center;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
+  
 .txt-1{
   text-align: justify;
 }
@@ -230,7 +204,7 @@ li {
   }
 
   .txt-description {
-    text-align: justify;
+    text-align: justify!important;
   }
 }
 
@@ -238,11 +212,21 @@ li {
   .list-certificaciones {
     max-width: 370px;
   }
-
-  .img-content {
-    width: 300px;
+  .line-bienv, .line-desc, .line-cert, .line-inst{
+    width: 200px!important;
   }
 }
-
+.line-bienv{
+  width: 380px;
+}
+.line-desc{
+  width: 300px;
+}
+.line-cert{
+  width: 490px;
+}
+.line-inst{
+  width: 690px;
+}
 </style>
 
