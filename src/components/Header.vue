@@ -2,10 +2,10 @@
   <div class="container-header position-sticky montserrat-font-semibold">
     <div class="container-links">
       <nav>
-        <div class="v-sheet d-flex align-center justify-space-between px-4">
+        <div class="d-flex align-center justify-space-between px-4">
 
           <!-- Logo -->
-          <div class="v-sheet pa-2 ml-10">
+          <div class="cont-logo">
             <RouterLink to="/" class="nav-link">
               <img src="/Logo-avohit-GRIS.png" alt="Logo" />
             </RouterLink>
@@ -78,7 +78,10 @@ img {
   font-size: 14px;
   margin-left: 3rem;
 }
-
+.cont-logo{
+  padding: 8px;
+  margin-left: 40px;
+}
 button {
   height: 36px;
   width: 146px;
@@ -110,6 +113,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  
   .menu-toggle {
     display: block;
   }
@@ -142,27 +146,21 @@ button:hover {
   max-height: 0;
   opacity: 0;
 }
-
+.nav-items-desktop {
+  display: flex;
+}
 .slide-down-enter-to,
 .slide-down-leave-from {
   max-height: 500px; /* Valor suficientemente alto para el contenido */
   opacity: 1;
 }
+
 @media (max-width: 768px) {
-  .nav-items-mobile {
+    .nav-items-mobile {
     width: 100%;
     padding-top: 10px;
     background-color: white;
   }
-}
-/* nuevo estilo */
-/* Estilo por defecto (escritorio) */
-.nav-items-desktop {
-  display: flex;
-}
-
-/* Ocultar en móvil */
-@media (max-width: 768px) {
   .nav-items-desktop {
     display: none !important;
   }
@@ -175,6 +173,17 @@ button:hover {
 
   .menu-toggle {
     display: block;
+  }
+  .cont-logo{
+    padding: 8px;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .nav-link{
+    margin-left: 0rem;
+  }
+  button{
+    margin-left: 0rem;
   }
 }
 

@@ -5,13 +5,13 @@
     <v-container>
             <v-row>
                 <v-col>
-                <P class="txt-description v-sheet ma-7" >Somos una empresa comprometida, solidaria, responsable con el medio ambiente y población, al conservar desde el inicio de la cosecha, hasta el último proceso con la industria cumpliendo con todas las reglas de índole socio ambiental</P>
+                <P class="txt-description ma-7" >Somos una empresa comprometida, solidaria, responsable con el medio ambiente y población, al conservar desde el inicio de la cosecha, hasta el último proceso con la industria cumpliendo con todas las reglas de índole socio ambiental</P>
                 </v-col>
                 <v-col class="text-center">
-                <img src="/foto-prueba-marcaagu.jpg" alt="" class="v-sheet ma-7 img-content" >
+                <img src="/foto-prueba-marcaagu.jpg" alt="" class="ma-7 img-content" >
                 </v-col>
             </v-row>
-        </v-container>
+    </v-container>
 
   
     <div class="container-vision text-center">
@@ -59,7 +59,7 @@ const fotos = [
 </script>
 <style scoped>
 .txt-val{
-    padding: 20px;
+    padding: 1rem 15rem;
 }
 .icon-valor{
     width: 200px;

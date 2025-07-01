@@ -42,13 +42,10 @@
 </script>
 <style scoped>
 .contact-container {
-  padding: 4rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
-h2 {
-  margin-bottom: 1.5rem;
-}
 
 .contact-card {
   display: flex;
