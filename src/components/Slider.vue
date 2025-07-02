@@ -16,8 +16,7 @@
           left: index === (current - 1 + images.length) % images.length,
           right: index === (current + 1) % images.length
         }"
-        @click="index === current ? openModal() : goTo(index)"
-      >
+        @click="index === current ? openModal() : goTo(index)">
         <img :src="img.src" :alt="img.alt" />
       </div>
     </div>
