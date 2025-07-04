@@ -1,9 +1,9 @@
 <template>
   <div class="contact-container">
-    <h2 class="text-center montserrat-regular">CONTACTANOS</h2>
-    <div class="decorative-line"></div>
+    <h2 class="text-center montserrat-regular ">CONTACTANOS</h2>
+    <div class="decorative-line line-contact mb-3"></div>
 
-    <div class="contact-card">
+    <div class="contact-card mt-3">
       <form
         class="form-contact"
         action="https://formsubmit.co/soporte@avohit.com.mx"
@@ -45,7 +45,9 @@
   padding: 1rem 1rem;
   text-align: center;
 }
-
+.line-contact{
+  width: 400px;
+}
 
 .contact-card {
   display: flex;
