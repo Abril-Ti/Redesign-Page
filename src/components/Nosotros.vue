@@ -60,7 +60,6 @@
     </v-container>
 
     <!-- Línea del tiempo <Timeline2 />-->
-    
   </div>
 </template>
 
