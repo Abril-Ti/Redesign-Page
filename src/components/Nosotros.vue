@@ -86,10 +86,7 @@ import Timeline2 from './Timeline2.vue'
 
 /* Texto */
 .txt-description {
-  font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  letter-spacing: 1px;
+  
   text-align: justify;
   max-width: 90%;
   margin: 0 auto;
@@ -99,7 +96,7 @@ import Timeline2 from './Timeline2.vue'
 .decorative-line {
   height: 2px;
   background-color: #000;
-  margin: 1.5rem auto 3rem auto;
+  
 }
 .line-nos {
   width: 330px;
