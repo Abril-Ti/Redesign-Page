@@ -196,5 +196,9 @@ onMounted(() => {
     width: 200px !important;
   }
 }
-
+@media (min-width: 1920px) {
+    .v-container {
+        max-width: 1250px;
+    }
+}   
 </style>
