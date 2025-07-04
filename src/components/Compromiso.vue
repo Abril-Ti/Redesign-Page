@@ -1,7 +1,7 @@
 <template>
 <div>
     <h2 class="text-center montserrat-regular">NUESTRO COMPROMISO</h2> 
-    <div class="decorative-line"></div>
+    <div class="decorative-line line-comp"></div>
     <v-container>
             <v-row>
                 <v-col>
@@ -16,18 +16,18 @@
   
     <div class="container-vision text-center">
         <h2 class="montserrat-regular txt-val">VISIÓN </h2>
-        <div class="decorative-line"></div>
+        <div class="decorative-line line-vis"></div>
         <p class="txt-description txt-val">Nuestra misión es ser una empresa completamente comprometida desde el cultivo, cosecha, empaque y traslado del aguacate hasta el contacto con el cliente, con los estándares más exigentes en la calidad e inocuidad, mediante la tecnología más vanguardista del mercado, satisfaciendo así el paladar por medio de la calidad en todo el mundo, sin distinción de temporadas.</p>
     </div>
     <div class="container-mision text-center">
         <h2 class="montserrat-regular mt-10 txt-val">MISIÓN</h2>
-        <div class="decorative-line"></div>
+        <div class="decorative-line line-vis"></div>
         <p class="txt-description txt-val">Crecer como la empresa líder en el mercado Internacional con el proceso de trazabilidad más íntegro, que preserva la calidad desde el cultivo hasta la exportación, por medio de la tecnología más vanguardista, obteniendo así la mayor eficiencia confianza y capacidad de acuerdo a la demanda de cualquier temporada.</p>
     </div>
 
     <div class="container-valores">
         <h2 class="text-center montserrat-regular">NUESTROS VALORES</h2>
-        <div class="decorative-line"></div>
+        <div class="decorative-line line-val"></div>
 
         <p class="txt-description txt-val">Socialmente somos una empresa que no distingue cuestiones culturales, creencias, incluyendo diversidad de preferencias en la sociedad, caracterizándonos principalmente por:</p>
 
@@ -67,12 +67,26 @@ const fotos = [
 .valor{
     font-size: 20px;
 }
+.line-comp{
+    width: 650px;
+}
+.line-vis{
+    width: 250px;
+}
+.line-val{
+    width: 350px;
+}
 @media (min-width: 768px) {
     .img-content{
         width: 600px;
     }
+   
+
 }
 @media (max-width: 768px) {
+    .line-comp{
+        width: 250px;
+    }
     .img-content{
         width: 300px;
     }
@@ -83,6 +97,9 @@ const fotos = [
    .valor{
     font-size: 15px;
    }
+    .txt-val{
+        padding: 1rem 1rem;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px){
    .icon-valor{
