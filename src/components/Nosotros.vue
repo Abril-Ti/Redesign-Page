@@ -126,4 +126,11 @@ import Timeline2 from './Timeline2.vue'
     width: 250px !important;
   }
 }
+.img-content {
+  transition: transform 0.4s ease;
+}
+.img-content:hover {
+  transform: scale(1.05);
+   box-shadow: 0 12px 24px rgba(112, 148, 101, 0.3);
+}
 </style>

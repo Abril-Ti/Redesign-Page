@@ -13,7 +13,7 @@
       <v-container class="info-section" fluid>
         <v-row class="align-start section-row mb-5" dense>
           <v-col cols="12" md="6" order-md="1" order="1">
-            <img src="/Aguacate-malla.jpg" alt="Aguacate en malla" class="img-content" />
+            <img src="/Aguacate-malla.jpg" alt="Aguacate en malla" class="img-content"/>
           </v-col>
           <v-col cols="12" md="6" order-md="2" order="2">
             <p class="txt-description">      
@@ -22,8 +22,8 @@
           </v-col>
         </v-row>
 
-        <v-row class="align-start section-row mb-5" dense>
-          <v-col cols="12" md="6" order-md="2" order="1">
+        <v-row class="align-start section-row mb-5" dense data-aos="fade-left">
+          <v-col cols="12" md="6" order-md="2" order="1" >
             <img src="/workers.jpg" alt="Trabajadores" class="img-content" />
           </v-col>
           <v-col cols="12" md="6" order-md="1" order="2">
@@ -201,4 +201,12 @@ onMounted(() => {
         max-width: 1250px;
     }
 }   
+.img-content {
+  transition: transform 0.4s ease;
+}
+.img-content:hover {
+  transform: scale(1.05);
+   box-shadow: 0 12px 24px rgba(112, 148, 101, 0.3);
+}
+
 </style>
