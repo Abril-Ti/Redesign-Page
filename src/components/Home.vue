@@ -4,11 +4,15 @@
     <section class="bienvenida">
       <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
       <div class="decorative-line line-bienv"></div>
-      <div class="text-container">
+      <v-container>
+       <div class="text-container">
         <p class="txt-description text-center">
           Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
         </p>
       </div>
+      </v-container>
+
+      
 
       <v-container class="info-section" fluid>
         <v-row class="align-start section-row mb-5" dense>
@@ -196,5 +200,10 @@ onMounted(() => {
     width: 200px !important;
   }
 }
+@media (min-width: 1920px) {
+    .v-container {
+        max-width: 1250px;
+    }
+}         
 
 </style>

@@ -59,8 +59,8 @@
       </v-row>
     </v-container>
 
-    <!-- Línea del tiempo -->
-    <Timeline2 />
+    <!-- Línea del tiempo <Timeline2 />-->
+    
   </div>
 </template>
 
@@ -126,4 +126,9 @@ import Timeline2 from './Timeline2.vue'
     width: 250px !important;
   }
 }
+@media (min-width: 1920px) {
+    .v-container {
+        max-width: 1450px;
+    }
+}   
 </style>
