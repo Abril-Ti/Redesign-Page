@@ -1,224 +1,198 @@
 <template>
-  <div class="text-center timeline-container">
-    <h2 class="text-center montserrat-regular">GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO</h2>
-    <div class="decorative-line mb-10 mx-auto"></div>
-
-    <!-- Año 2019 -->
-    <div class="year-label">
-      <img src="/Timeline/2019.png" alt="" class="year-label mb-6" data-aos="zoom-in">
-    </div>
-
-    <v-timeline align="center">
-      <div class="text-ceter">
-<v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-      </div>
-      
-
-      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
-        <!-- Imagen para móvil -->
-        <img src="/Timeline/img-2019.png" alt="2019" class="timeline-img mobile-img" />
-
-        <p class="txt-description">
-          Inicio la construcción del empaque de Grupo Avohit de México, en Morelia, Michoacán.
-        </p>
-
-        <!-- Imagen para escritorio -->
-        <template #opposite>
-          <img src="/Timeline/img-2019.png" alt="2019" class="timeline-img desktop-img" />
-        </template>
-      </v-timeline-item>
-
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-    </v-timeline>
-
-    <!-- Año 2022 -->
-    <div class="year-label">
-      <img src="/Timeline/2022.png" alt="" class="year-label mb-6" data-aos="zoom-in">
-    </div>
-
-    <v-timeline align="center">
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-
-      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
-        <img src="/Timeline/img-2023-1.png" alt="2022" class="timeline-img mobile-img" />
-        <p class="txt-description">
-          Inauguración del empaque.
-        </p>
-        <template #opposite>
-          <img src="/Timeline/img-2023-1.png" alt="2022" class="timeline-img desktop-img" />
-        </template>
-      </v-timeline-item>
-
-      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
-        <img src="/Timeline/img-2023-2.JPG" alt="2022" class="timeline-img mobile-img" />
-        <p class="txt-description">
-          Inicio de las operaciones
-        </p>
-        <template #opposite>
-          <img src="/Timeline/img-2023-2.JPG" alt="2022" class="timeline-img desktop-img" />
-        </template>
-      </v-timeline-item>
-
-      <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
-        <img src="/Timeline/img-2023-3.JPG" alt="2022" class="timeline-img mobile-img" />
-        <p class="txt-description">
-          Primer embarque
-        </p>
-        <template #opposite>
-          <img src="/Timeline/img-2023-3.JPG" alt="2022" class="timeline-img desktop-img" />
-        </template>
-      </v-timeline-item>
-
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-      <v-timeline-item dot-color="#9cbd98" />
-    </v-timeline>
-
-    <!-- Año 2023 -->
-    <div class="year-label" data-aos="zoom-in">
-      <img src="/Timeline/2023.png" alt="" class="year-label mb-6" >
-    </div>
+  <div class="timeline-container text-center">
+    <v-container class="text-center">
+      <h2 class="text-center montserrat-regular mt-40">GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO</h2>
     
-    <!--        PRUEBA DE ITEM CAMBIANTE          -->        <!-- VISTA MÓVIL -->
-       <v-timeline align="center" class="row">
-          <v-timeline-item dot-color="#9cbd98"/>
-          <v-timeline-item dot-color="#9cbd98"/>
-          <v-timeline-item dot-color="#9cbd98"/>
 
-          <v-timeline-item icon="mdi-calendar" dot-color="#9cbd98" fill-dot>
-            <div>
-              <!-- <h6 class="font-weight-bold">Noviembre</h6> -->
-              
-              <p class="txt-description" style="margin-right: 5rem;">
-                Contenedor número 1000.
-              </p>
-            </div>
-            <template #opposite>
-              <img src="/Timeline/img-2024.JPG" style="width: 480px; margin-left: 5rem;" class="" />
-            </template>
-          </v-timeline-item>
+      <!-- Contenido -->
+      <transition name="fade" mode="out-in">
+        <v-row :key="selectedIndex" class="mt-10" align="center" justify="center">
+          <v-col cols="12" md="5">
+            <v-img
+              :src="timeline[selectedIndex].img"
+              aspect-ratio="1.5"
+              class="rounded-lg elevation-4"
+              cover
+            />
+          </v-col>
+          <v-col cols="12" md="5">
+            <h1 class="montserrat-regular title-age">{{ timeline[selectedIndex].year }}</h1>
+            <ul v-if="Array.isArray(timeline[selectedIndex].desc)" class="txt-description">
+              <li
+                v-for="(text, i) in timeline[selectedIndex].desc"
+                :key="i"
+                class="my-3">
+                {{ text }}
+              </li>
+            </ul>
+            <p v-else class="mt-4 txt-description">{{ timeline[selectedIndex].desc }}</p>
+          </v-col>
+        </v-row>
+      </transition>
 
-        <v-timeline-item dot-color="#9cbd98"/>
-        <v-timeline-item dot-color="#9cbd98"/>
-        <v-timeline-item dot-color="#9cbd98"/>
-    </v-timeline>
+      <v-row justify="center" class="position-relative">
+        <!-- Línea base -->
+        <div class="progress-line"></div>
+        <!-- Línea activa -->
+        <div
+          class="progress-line-active"
+          :style="{ width: `${((selectedIndex + 1) / timeline.length) * 100}%` }"
+        ></div>
 
+        <!-- Navegación por años -->
+        <v-col
+          v-for="(item, index) in timeline"
+          :key="index"
+          class="timeline-dot-col"
+          cols="auto"
+        >
+          <div
+            class="timeline-dot"
+            :class="{ active: index === selectedIndex }"
+            @click="selectItem(index)"
+          ></div>
+          <div
+            class="timeline-year mt-2 montserrat-regular"
+            :class="{ active: index === selectedIndex }"
+          >
+            {{ item.year }}
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
+const selectedIndex = ref(0)
+
+const timeline = [
+  {
+    year: '2019',
+    img: 'Timeline/img-2019.png',
+    desc: 'Inicio de construcción de la planta agroindustrial.'
+  },
+  {
+    year: '2023',
+    img: 'Timeline/img-2023-1.png',
+    desc: [
+      'Inauguración del empaque.',
+      'Inicio de operaciones formales.',
+      'Primer embarque.'
+    ]
+  },
+  {
+    year: '2024',
+    img: 'Timeline/img-2024.JPG',
+    desc: 'Embarque numero 1000'
+  },
+  {
+    year: '2025',
+    img: 'Timeline/img-2025.JPG',
+    desc: 'Tercer Aniversario del empaque.'
+  }
+]
+
+function selectItem(index) {
+  selectedIndex.value = index
+}
 </script>
 
 <style scoped>
+.title-age{
+  letter-spacing: 20px;
+  font-size: 55px;
+}
 .timeline-container {
-  margin-top: 10rem;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  position: relative;
 }
 
-.v-timeline-item{
-  background-color: none;
-}
-/* Imágenes */
-.timeline-img {
-  max-width: 480px;
+.progress-line {
+  position: absolute;
+  top: 18px;
+  left: 5%;
   width: 100%;
-  height: auto;
-  margin: 1rem auto;
-  display: block;
+  height: 4px;
+  background-color: #cfd8dc;
+  z-index: 0;
+  border-radius: 2px;
 }
 
-/* Control de visibilidad */
-.desktop-img {
-  display: none;
-}
-.mobile-img {
-  display: block;
-}
-
-/* Texto */
-.v-timeline-item p,
-.txt-description {
-  margin: 0 auto;
-  max-width: 500px;
-  font-size: 1.1rem;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  text-align: justify;
+.progress-line-active {
+  position: absolute;
+  top: 18px;
+  left: 5%;
+  height: 4px;
+  background-color: #276918;
+  z-index: 1;
+  border-radius: 2px;
+  transition: width 0.4s ease;
 }
 
-/* Oculta líneas entre dots */
-.v-timeline-item-divider,
-.v-timeline-divider__before,
-.v-timeline-divider__after {
-  display: none !important;
+.timeline-dot-col {
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
-/* Animación de glow */
-@keyframes pulse-glow {
-  0% {
-    box-shadow: 0 0 0px 0 rgba(39, 105, 24, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 12px 6px rgba(39, 105, 24, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 0px 0 rgba(39, 105, 24, 0.4);
-  }
-}
-.v-timeline-divider__dot--size-default .v-timeline-divider__inner-dot {
-  animation: pulse-glow 2s infinite;
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #bbb;
   border-radius: 50%;
+  margin: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 3px solid transparent;
 }
 
-/* Línea decorativa */
-.decorative-line {
-  width: 600px;
-  height: 2px;
-  background-color: #000;
-  margin-bottom: 3rem;
+.timeline-dot.active {
+  background-color: #276918;
+  transform: scale(1.7);
+  border-color: #276918;
 }
 
-/* Responsivo */
-@media (min-width: 769px) {
-  .desktop-img {
-    display: block;
-  }
-  .mobile-img {
-    display: none;
-  }
+.timeline-year {
+  font-weight: 600;
+  font-size: 15px;
+  color: #444;
+  transition: all 0.3s ease;
+  letter-spacing: 5px;
 }
 
+.timeline-year.active {
+  color: #276918;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.txt-description{
+  width: 100%;
+  text-align: center;
+}
+ul{
+  list-style-type:none;
+  margin-top: 1rem;
+}
 @media (max-width: 768px) {
-  .v-timeline-item {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    padding: 2rem 1rem;
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
   }
-
-  .txt-description {
-    max-width: 95%;
-    text-align: justify;
-    margin-top: 1rem;
+  .timeline-year {
+    font-size: 12px;
   }
-
-  .timeline-img {
-    margin-bottom: 1.5rem;
-  }
-
-  .decorative-line {
-    width: 150px !important;
-  }
-}
-
-/* Línea de tiempo sin línea vertical */
-.v-timeline {
-  --v-timeline-line-thickness: 0 !important;
 }
 </style>
