@@ -32,7 +32,8 @@
 
       <v-row justify="center" class="position-relative">
         <!-- Línea base -->
-        <div class="progress-line"></div>
+         <!-- <div class="progress-line"></div>-->
+        
         <!-- Línea activa -->
         <div
           class="progress-line-active"
