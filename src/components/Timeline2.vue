@@ -44,7 +44,7 @@
           v-for="(item, index) in timeline"
           :key="index"
           class="timeline-dot-col"
-          cols="auto"
+     
         >
           <div
             class="timeline-dot"
@@ -185,6 +185,7 @@ function selectItem(index) {
 ul{
   list-style-type:none;
   margin-top: 1rem;
+  text-align: justify;
 }
 @media (max-width: 768px) {
   .timeline-dot {
