@@ -1,15 +1,143 @@
-
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/icon-3.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo AvoHit de México</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <h1>ESTO ES LA PRUEBA PARA LA PAGINA DE ERROR 404 DEL PROYECTO AVOHIT</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error 404 - En Mantenimiento</title>
+
+  <!-- Fuente Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #ffffff, #f3f6f4);
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    .falling-leaves {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .leaf-svg {
+      position: absolute;
+      top: -60px;
+      animation: fall 12s linear infinite;
+      opacity: 0.85;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateY(50vh) rotate(180deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: #D32F2F;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    a button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    a button:hover {
+      background-color: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <div class="falling-leaves" id="leaves"></div>
+
+  <div class="content">
+    <h1>¡EN MANTENIMIENTO!</h1>
+    <h2>Ups...</h2>
+    <p>
+      La página que buscas estará en mantenimiento por un tiempo.<br>
+      De momento, revisa nuestra información en Facebook.
+    </p>
+    <a href="https://www.facebook.com/share/16HVJLtXSv/" target="_blank">
+      <button>Ir a página de Facebook</button>
+    </a>
+  </div>
+
+  <script>
+    // Generar hojas aleatorias
+    const leavesContainer = document.getElementById('leaves');
+    for (let n = 0; n < 10; n++) {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 64 64');
+      svg.setAttribute('class', 'leaf-svg');
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', 'M32 2C18 8 6 28 18 48s28 16 28-2S46 6 32 2z');
+      path.setAttribute('fill', '#4CAF50');
+      path.setAttribute('stroke', '#2E7D32');
+      path.setAttribute('stroke-width', '2');
+      svg.appendChild(path);
+
+      const delay = Math.random() * 10;
+      const left = Math.random() * 100;
+      const size = 30 + Math.random() * 20;
+
+      svg.style.left = `${left}%`;
+      svg.style.animationDelay = `${delay}s`;
+      svg.style.width = `${size}px`;
+
+      leavesContainer.appendChild(svg);
+    }
+  </script>
+</body>
 </html>
