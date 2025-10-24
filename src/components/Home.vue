@@ -76,6 +76,7 @@
           <li>🥑 Sistemas de Reducción de Riesgos de Contaminación.</li>
           <li>🥑 Sedex Members Ethical Trade Audit (SMETA).</li>
           <li>🥑 PrimusGFS.</li>
+          <li>🥑 Pro Forest Avocado.</li>
         </ul>
         <img src="/Aguacate-mascota-lapiz.png" alt="Mascota con lápiz" class="img-content" />
       </div>

@@ -27,18 +27,21 @@ const router = createRouter({
       path: '/compromiso',
       name: 'compromiso',
     component: () => import('../views/CompromisoView.vue'),
-    },
+    },/*
     {
       path: '/sabiasque',
       name: 'sabiasque',
-      component: () => import('../views/SabiasqueView.vue'),
-    },
+      component: () => import('../vie ws/SabiasqueView.vue'),
+    },*/
     {
       path: '/contacto',
       name: '/contacto',
       component: () => import('../views/ContactoView.vue'),
     },
-    
+    { path: '/:pathMatch(.*)*', 
+      name: 'NotFound', 
+      component: () => import('../components/NotFound.vue') }
+    ,
   ],
 })
 
