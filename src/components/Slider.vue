@@ -58,6 +58,9 @@ export default {
     return {
       current: 0,
       images: [
+        { src: 'Slider/v2/Caja AVOHIT.png', alt: 'Caja' },
+        { src: 'Slider/v2/Control-de-calidad.png', alt: 'Imagen 5' },
+        { src: 'Slider/v2/Embarques-Montacargas.png', alt: 'Imagen 6' },
         { src: 'Slider/Slide0.JPG', alt: 'Imagen 1' },
         { src: 'Slider/Slide1.JPG', alt: 'Imagen 2' },
         { src: 'Slider/Slide2.JPG', alt: 'Imagen 3' },

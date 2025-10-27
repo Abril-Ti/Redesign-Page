@@ -13,7 +13,8 @@
       <v-container class="info-section" fluid>
         <v-row class="align-start section-row mb-5" dense>
           <v-col cols="12" md="6" order-md="1" order="1">
-            <img src="/Aguacate-malla.jpg" alt="Aguacate en malla" class="img-content"/>
+             <!-- <img src="/Aguacate-malla.jpg" alt="Aguacate en malla" class="img-content"/>-->
+            <img src="/Caja-negra-rcp-web.png" alt="Aguacate en malla" class="img-content"/>
           </v-col>
           <v-col cols="12" md="6" order-md="2" order="2">
             <p class="txt-description">      
@@ -24,7 +25,8 @@
 
         <v-row class="align-start section-row mb-5" dense data-aos="fade-left">
           <v-col cols="12" md="6" order-md="2" order="1" >
-            <img src="/workers.jpg" alt="Trabajadores" class="img-content" />
+            <!-- <img src="/workers.jpg" alt="Trabajadores" class="img-content" />-->
+            <img src="/Produccion.JPG" alt="Trabajadores" class="img-content" />
           </v-col>
           <v-col cols="12" md="6" order-md="1" order="2">
             <p class="txt-description">
@@ -35,7 +37,8 @@
 
         <v-row class="align-start section-row mb-5 mt-5" dense>
           <v-col cols="12" md="6" order-md="1" order="1">
-            <img src="/varios.jpg" alt="Aguacates varios" class="img-content" />
+            <!-- <img src="/varios.jpg" alt="Aguacates varios" class="img-content" />-->
+            <img src="/Huertas.png" alt="Aguacates varios" class="img-content"/>
           </v-col>
           <v-col cols="12" md="6" order-md="2" order="2">
             <p class="txt-description">
