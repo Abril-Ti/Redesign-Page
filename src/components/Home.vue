@@ -26,7 +26,7 @@
         <v-row class="align-start section-row mb-5" dense data-aos="fade-left">
           <v-col cols="12" md="6" order-md="2" order="1" >
             <!-- <img src="/workers.jpg" alt="Trabajadores" class="img-content" />-->
-            <img src="/Produccion.JPG" alt="Trabajadores" class="img-content" />
+            <img src="/Produccion-SL.png" alt="Trabajadores" class="img-content" />
           </v-col>
           <v-col cols="12" md="6" order-md="1" order="2">
             <p class="txt-description">
