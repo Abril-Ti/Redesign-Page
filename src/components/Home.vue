@@ -82,10 +82,13 @@
           <li>🥑 Pro Forest Avocado.</li>
         </ul>
         <img src="/Aguacate-mascota-lapiz.png" alt="Mascota con lápiz" class="img-content" />
+        <img src="/Personaje-Avocatin-version-2.jpg" alt="Mascota version 2" class="img-content"/>
       </div>
     </section>
 
-    <!-- Instalaciones -->
+    <!--  DE MOMENTO SE OCULTA ESTA SECCION POR INDICACIONES DE DIRECCION  -->
+      <!-- 
+     Instalaciones
     <section class="instalaciones">
       <h2 class="montserrat-regular title-line">NUESTRAS INSTALACIONES</h2>
       <div class="decorative-line line-inst"></div>
@@ -106,7 +109,7 @@
           class="promo-video"
         ></video>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
