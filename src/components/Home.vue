@@ -85,7 +85,9 @@
       </div>
     </section>
 
-    <!-- Instalaciones -->
+    <!--  DE MOMENTO SE OCULTA ESTA SECCION   -->
+      <!-- 
+     Instalaciones
     <section class="instalaciones">
       <h2 class="montserrat-regular title-line">NUESTRAS INSTALACIONES</h2>
       <div class="decorative-line line-inst"></div>
@@ -106,7 +108,7 @@
           class="promo-video"
         ></video>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
