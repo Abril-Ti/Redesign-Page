@@ -12,7 +12,8 @@
           </p>
         </v-col>
         <v-col cols="12" md="6" class="text-center">
-          <img src="/foto-prueba-marcaagu.jpg" alt="Compromiso" class="img-content" />
+          <!--<img src="/foto-prueba-marcaagu.jpg" alt="Compromiso" class="img-content" /> -->
+          <img src="/Arbol.JPG" alt="Compromiso" class="img-content" />
         </v-col>
       </v-row>
     </v-container>
