@@ -13,7 +13,7 @@
         </v-col>
         <v-col cols="12" md="6" class="text-center">
           <!--<img src="/foto-prueba-marcaagu.jpg" alt="Compromiso" class="img-content" /> -->
-          <img src="/Arbol-2.png" alt="Compromiso" class="img-content" />
+          <img src="/Arbol-2.png" alt="Arbol" class="img-content" />
         </v-col>
       </v-row>
     </v-container>
