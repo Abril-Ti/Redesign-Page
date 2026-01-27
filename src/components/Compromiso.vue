@@ -4,6 +4,7 @@
     <h2 class="text-center montserrat-regular">NUESTRO COMPROMISO</h2>
     <div class="decorative-line line-comp"></div>
 
+    <!--Primer contenedor de informacion-->
     <v-container fluid>
       <v-row class="align-center justify-center compromiso-section">
         <v-col cols="12" md="6" class="text-md-end text-center">
@@ -37,7 +38,7 @@
     </div>
 
     <!-- NUESTROS VALORES -->
-    <div class="container-valores text-center">
+    <div class="container-valores text-center mb-7">
       <h2 class="montserrat-regular">NUESTROS VALORES</h2>
       <div class="decorative-line line-val"></div>
       <p class="txt-description txt-val txt-block">
