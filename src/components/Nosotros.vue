@@ -12,7 +12,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="6" order-md="2" order="1">
-          <img src="/Panoramica empaque.jpg" alt="Marca Avohit" class="img-content" />
+          <img src="/Panoramica empaque.jpg" alt="Panoramica Empaque" class="img-content" />
           <!--<img src="/foto-prueba-marcaagu.jpg" alt="Marca Avohit" class="img-content" /> -->
         </v-col>
       </v-row>
@@ -44,7 +44,7 @@
         </v-col>
         <v-col cols="12" md="6" order-md="2" order="1">
           <!--<img src="/img-us3.png" alt="Mujeres trabajadoras" class="img-content" /> -->
-          <img src="/Empacadoras.jpg" alt="Mujeres trabajadoras" class="img-content" /> 
+          <img src="/Empacadoras.jpg" alt="Mujeres trabajadoras " class="img-content" /> 
 
         </v-col>
       </v-row>
@@ -52,7 +52,7 @@
       <!-- Bloque 3 -->
       <v-row class="section-row" align="start" dense>
         <v-col cols="12" md="6" order-md="1" order="1">
-          <img src="/Foto calidad.JPG" alt="Visión empresarial" class="img-content" />
+          <img src="/Foto calidad.JPG" alt="Foto empleados" class="img-content" />
           <!-- <img src="/img-us.png" alt="Visión empresarial" class="img-content" />-->
         </v-col>
         <v-col cols="12" md="6" order-md="2" order="2">
