@@ -85,12 +85,12 @@ const timeline = [
   },
   {
     year: '2024',
-    img: 'Timeline/img-2024.JPG',
+    img: 'Timeline/img-2024.jpg',
     desc: 'Embarque numero 1000'
   },
   {
     year: '2025',
-    img: 'Timeline/img-2025.JPG',
+    img: 'Timeline/img-2025.jpg',
     desc: 'Tercer Aniversario del empaque.'
   }
 ]
