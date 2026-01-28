@@ -58,15 +58,15 @@ export default {
     return {
       current: 0,
       images: [
-        { src: 'Slider/v2/Caja AVOHIT.png', alt: 'Caja' },
-        { src: 'Slider/v2/Control-de-calidad.png', alt: 'Imagen 5' },
-        { src: 'Slider/v2/Embarques-Montacargas.png', alt: 'Imagen 6' },
-        { src: 'Slider/Slide0.JPG', alt: 'Imagen 1' },
-        { src: 'Slider/Slide1.JPG', alt: 'Imagen 2' },
-        { src: 'Slider/Slide2.JPG', alt: 'Imagen 3' },
-        { src: 'Slider/Slide3.JPG', alt: 'Imagen 4' },
-        { src: 'Slider/Slide4.JPG', alt: 'Imagen 5' },
-        { src: 'Slider/Slide5.JPG', alt: 'Imagen 6' },
+        { src: 'Slider/CajaCartonOP.jpg', alt: 'Caja de Carton' },
+        { src: 'Slider/CalidadOP.jpg', alt: 'Calidad' },
+        { src: 'Slider/EmbarquesOP.jpg', alt: 'Montacargas' },
+        { src: 'Slider/Seleccion.jpg', alt: 'Imagen 1' },
+        { src: 'Slider/SeleccionEmpaque.jpg', alt: 'Imagen 2' },
+        { src: 'Slider/CajasNaranja.jpg', alt: 'Imagen 3' },
+        { src: 'Slider/Brazos.jpg', alt: 'Imagen 4' },
+        { src: 'Slider/SotanoCajas.jpg', alt: 'Imagen 5' },
+       
       ]
     };
   },

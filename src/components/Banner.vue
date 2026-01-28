@@ -3,7 +3,7 @@
             <div class="position-relative">
                 <img src="/Logo-avohit-BLANCO.png" alt="" class="logo-bl img-f">
                 <div class="capa-oscura"></div>
-                <img src="/banner-panoramica.JPG" alt="" class="banner-gif img-c">
+                <img src="/banner-panoramica.jpg" alt="" class="banner-gif img-c">
             </div>
         </div>
 
