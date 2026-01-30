@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import NotFound from '../components/NotFound.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -13,37 +13,29 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
     {
-    path: '/nosotros',
-    name: 'nosotros',
-    component: () => import('../views/NosotrosView.vue'),
+      path: '/nosotros',
+      name: 'nosotros',
+      component: () => import('../views/NosotrosView.vue'),
     },
     {
       path: '/compromiso',
       name: 'compromiso',
-    component: () => import('../views/CompromisoView.vue'),
-    },/*
-    {
-      path: '/sabiasque',
-      name: 'sabiasque',
-      component: () => import('../vie ws/SabiasqueView.vue'),
-    },*/
+      component: () => import('../views/CompromisoView.vue'),
+    },
     {
       path: '/contacto',
-      name: '/contacto',
+      name: 'contacto',
       component: () => import('../views/ContactoView.vue'),
     },
-    { path: '/:pathMatch(.*)*', 
-      name: 'NotFound', 
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
       component: NotFound,
-    }
-    ,
+    },
   ],
-})
+});
 
-export default router
+export default router;
