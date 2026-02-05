@@ -82,7 +82,7 @@
           <li>🥑 Pro Forest Avocado.</li>
         </ul>
         <!-- <img src="/Aguacate-mascota-lapiz.png" alt="Mascota con lápiz" class="img-content" />-->
-        <img src="/Personaje-Avocatin-version-2.jpg" alt="Mascota version 2" class="img-content"/>
+        <img src="/Personaje-Avocatin-version-2.jpg" alt="Mascota version 2" class="img-content avocatin-sal"/>
       </div>
     </section>
 
@@ -201,6 +201,10 @@ onMounted(() => {
 
   .decorative-line {
     width: 200px !important;
+  }
+
+  .avocatin-sal{
+    width: 50%;
   }
 }
 @media (min-width: 1920px) {

@@ -1,7 +1,7 @@
 <template>
   <div class="contact-container">
-    <h2 class="text-center montserrat-regular ">CONTACTANOS</h2>
-    <div class="decorative-line line-contact mb-3"></div>
+    <h2 class="text-center montserrat-regular">CONTACTANOS</h2>
+    <div class="decorative-line line-contact mb-5"></div>
 
     <div class="contact-card mt-3">
       <form
@@ -30,7 +30,7 @@
       </form>
 
       <div class="contact-image">
-        <img src="/Aguacate-mascota-pc-dos.PNG" alt="imagen contacto" />
+        <img src="/Avocatin en escritorio.png" alt="imagen contacto" />
       </div>
       
     </div>
@@ -44,6 +44,7 @@
 .contact-container {
   padding: 1rem 1rem;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .line-contact{
   width: 400px;
