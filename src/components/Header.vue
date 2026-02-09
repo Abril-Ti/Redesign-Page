@@ -11,7 +11,7 @@
             </RouterLink>
           </div>
 
-          <!-- Botón hamburguesa para móvil -->
+          <!-- Botón hamburguesa para movil -->
         <div class="menu-toggle d-md-none mr-4" :class="{ active: mostrarMenu }" @click="mostrarMenu = !mostrarMenu">
             <span></span>
             <span></span>
@@ -19,26 +19,32 @@
         </div>
 
 <!-- Enlaces de navegación -->
-        <!-- Enlaces visibles SIEMPRE en pantallas grandes -->
+        <!-- Enlaces -->
             <div class="d-none d-md-flex align-center nav-items-desktop">
-                <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link" @click="cerrarMenuYSubir">INICIO</RouterLink></div>
-                <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">NOSOTROS</RouterLink></div>
-                <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">COMPROMISO</RouterLink></div>
+                <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link" @click="cerrarMenuYSubir">{{ $t("nav.home") }}</RouterLink></div>
+                <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">{{ $t("nav.about") }}</RouterLink></div>
+                <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">{{ $t("nav.comp") }}</RouterLink></div>
                 <!-- <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
-                <div class="v-sheet ma-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button>CONTACTO</button></RouterLink></div>
+                <div class="v-sheet ma-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="btn-contact">{{ $t("nav.conta") }}</button></RouterLink></div>
+                <div>
+                  <button @click="$setLang('es')"> <img src="/mx.png" alt="ESP"> </button>
+                  <button @click="$setLang('en')"><img src="/us.png" alt="ENG">  </button>
+                  
+
+                </div>
             </div>
 
       
         </div>
         <div>
-  <!-- Menú colapsable SOLO para móvil -->
+  <!-- Vista movil-->
             <transition name="slide-down" class="text-center mb-4">
                 <div v-show="mostrarMenu" class="d-md-none flex-column nav-items-mobile">
                     <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link"  @click="cerrarMenuYSubir">INICIO</RouterLink></div>
                     <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">NOSOTROS</RouterLink></div>
                     <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">COMPROMISO</RouterLink></div>
                     <!--                    <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
-                    <div class="v-sheet ma-2 mb-4"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="mb-2">CONTACTO</button></RouterLink></div>
+                    <div class="v-sheet ma-2 mb-4"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="mb-2 btn-contact">CONTACTO</button></RouterLink></div>
                 </div>
             </transition>
         </div>
@@ -49,12 +55,15 @@
 
 <script setup>
 import { ref } from 'vue';
+import {useI18n} from 'vue-i18n';
 const mostrarMenu = ref(false);
 
 function cerrarMenuYSubir() {
   mostrarMenu.value = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+const {t} =useI18n()
+
 </script>
 
 <style scoped>
@@ -82,7 +91,7 @@ img {
   padding: 8px;
   margin-left: 40px;
 }
-button {
+.btn-contact {
   height: 36px;
   width: 146px;
   background-color: #276918;
@@ -92,7 +101,7 @@ button {
   margin-left: 3rem;
 }
 
-button:hover {
+.btn-contact:hover {
   background-color: #387c27;
   box-shadow: 0px 4px 8px grey;
 }

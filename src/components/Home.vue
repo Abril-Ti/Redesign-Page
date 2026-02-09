@@ -1,13 +1,11 @@
 <template>
   <div class="text-center">
-    <!-- Bienvenida -->
+    <!-- Inicio -->
     <section class="bienvenida">
-      <h2 class="montserrat-regular title-line">BIENVENIDOS</h2>
+      <h2 class="montserrat-regular title-line">{{ $t("home.title1") }}</h2>
       <div class="decorative-line line-bienv"></div>
       <div class="text-container">
-        <p class="txt-description text-center">
-          Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.
-        </p>
+        <p class="txt-description text-center">{{ $t("home.job") }}</p>
       </div>
 
       <v-container class="info-section" fluid>
@@ -17,9 +15,7 @@
             <img src="/Caja-negra-OP.jpg" alt="Aguacate en malla" class="img-content"/>
           </v-col>
           <v-col cols="12" md="6" order-md="2" order="2">
-            <p class="txt-description">      
-              Nos esforzamos por ofrecer al mercado nacional e internacional un producto de primera calidad, con un sabor excepcional, altos estándares de inocuidad y un proceso de trazabilidad confiable de principio a fin.
-            </p>
+            <p class="txt-description">{{ $t("home.esf") }}</p>
           </v-col>
         </v-row>
 
@@ -29,9 +25,7 @@
             <img src="/ProduccionOP.jpg" alt="Trabajadores" class="img-content" />
           </v-col>
           <v-col cols="12" md="6" order-md="1" order="2">
-            <p class="txt-description">
-              Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.
-            </p>
+            <p class="txt-description">{{ $t("home.prod") }} </p>
           </v-col>
         </v-row>
 
@@ -41,9 +35,7 @@
             <img src="/PanoramaHuertaCasaOP.jpg" alt="Aguacates varios" class="img-content"/>
           </v-col>
           <v-col cols="12" md="6" order-md="2" order="2">
-            <p class="txt-description">
-              Impulsamos el desarrollo y la prosperidad de las comunidades donde operamos, reafirmando nuestro compromiso social y ambiental.
-            </p>
+            <p class="txt-description">{{ $t("home.prom") }}</p>
           </v-col>
         </v-row>
 </v-container>
@@ -53,24 +45,20 @@
 
     <!-- Descubre -->
     <section class="carousel-container">
-      <h2 class="montserrat-regular title-line">DESCUBRE</h2>
+      <h2 class="montserrat-regular title-line">{{ $t("home.title2") }}</h2>
       <div class="decorative-line line-desc"></div>
       <div class="text-container">
-        <p class="txt-description text-center">
-          ¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!
-        </p>
+        <p class="txt-description text-center">{{ $t("home.desc") }}</p>
       </div>
       <SliderComponent />
     </section>
 
     <!-- Certificaciones -->
     <section class="certificaciones-container mt-10">
-      <h2 class="montserrat-regular title-line">CERTIFICACIONES</h2>
+      <h2 class="montserrat-regular title-line">{{ $t("home.title3") }}</h2>
       <div class="decorative-line line-cert"></div>
       <div class="text-container">
-        <p class="txt-description text-center">
-          Nuestras certificaciones respaldan el compromiso constante con la mejora continua y la confianza de nuestros socios comerciales a nivel internacional.
-        </p>
+        <p class="txt-description text-center">{{ $t("home.cert") }}</p>
       </div>
       <div class="d-flex flex-wrap-reverse align-center justify-center mb-6">
         <ul class="list-certificaciones txt-description">

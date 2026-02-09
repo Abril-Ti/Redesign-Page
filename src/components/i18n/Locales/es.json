@@ -1,0 +1,62 @@
+{ 
+    "nav":{
+            "home": "INICIO",
+            "about": "NOSOTROS",
+            "comp": "COMPROMISO",
+            "conta": "CONTACTO"
+        },
+    
+    "home":{
+        "title1": "BIENVENIDOS",
+        "job":"Trabajamos con el objetivo de mantener el liderazgo en la producción y exportación de aguacates en México.",
+        "esf":"Nos esforzamos por ofrecer al mercado nacional e internacional un producto de primera calidad, con un sabor excepcional, altos estándares de inocuidad y un proceso de trazabilidad confiable de principio a fin. ",
+        "prod":"Nuestra producción se basa en prácticas eficientes y sustentables que no solo garantizan la calidad del aguacate, sino que también generan beneficios económicos para nuestros asociados.",
+        "prom":"Impulsamos el desarrollo y la prosperidad de las comunidades donde operamos, reafirmando nuestro compromiso social y ambiental.",
+        "title2":"DESCUBRE",
+        "desc":"¡Conoce parte de nuestras instalaciones y lo que hacemos para entregarte la mejor calidad!",
+        "title3":"CERTIFICACIONES",
+        "cert":"Nuestras certificaciones respaldan el compromiso constante con la mejora continua y la confianza de nuestros socios comerciales a nivel internacional.",
+        "c1":"Programa de Exportaciones de Aguacate Hass de México a los E.U.A.",
+        "c2":"Norma GLOBALG.A.P. para Cadena de Custodia (CoC).",
+        "c3":"Sistemas de Reducción de Riesgos de Contaminación.",
+        "c4":"Sedex Members Ethical Trade Audit (SMETA).",
+        "c5":"PrimusGFS.",
+        "c6":"Pro Forest Avocado."
+
+        },
+    "foot":{
+        "cont":"Contacto",
+        "sig":"¡Síguenos en redes sociales!",
+        "ubi":"Ubicación",
+        "rig":"Todos los derechos reservados."
+        },
+    "compr":{
+        "title1":"NUESTRO COMPROMISO",
+        "com":"Somos una empresa comprometida, solidaria, responsable con el medio ambiente y población, al conservar desde el inicio de la cosecha, hasta el último proceso con la industria cumpliendo con todas las reglas de índole socioambiental.",
+        "title2":"VISIÓN",
+        "mis":"Nuestra misión es ser una empresa completamente comprometida desde el cultivo, cosecha, empaque y traslado del aguacate hasta el contacto con el cliente, con los estándares más exigentes en la calidad e inocuidad, mediante la tecnología más vanguardista del mercado, satisfaciendo así el paladar por medio de la calidad en todo el mundo, sin distinción de temporadas.",
+        "title3":"MISIÓN",
+        "vis":"Crecer como la empresa líder en el mercado internacional con el proceso de trazabilidad más íntegro, que preserva la calidad desde el cultivo hasta la exportación, por medio de la tecnología más vanguardista, obteniendo así la mayor eficiencia, confianza y capacidad de acuerdo a la demanda de cualquier temporada.",
+        "title4":"NUESTROS VALORES",
+        "val":"Socialmente somos una empresa que no distingue cuestiones culturales, creencias, incluyendo diversidad de preferencias en la sociedad, caracterizándonos principalmente por:",
+        "vals":{
+            "calidad":"Calidad",
+            "honestidad":"Honestidad",
+            "gratitud":"Gratitud",
+            "responsabilidad":"Responsabilidad",
+            "etica":"Ética",
+            "pasion":"Pasión",
+            "trabajo":"Trabajo en equipo",
+            "respeto":"Respeto"
+            }
+        
+    },
+    "about":{
+        "title1":"NOSOTROS",
+        "us":"Somos una empresa pionera en el rubro del aguacate, cuyo propósito inicia desde la selección de las mejores tierras y ubicación geográfica que involucra la diversidad de climas y altitudes con la finalidad de producir la mejor calidad y máximo volumen en el mundo.",
+        "title2":"NUESTRO RUMBO",
+        "gpo":"Grupo Avohit de México fue fundado el 12 de agosto del 2019, colocando la primera piedra de la mega planta agroindustrial de Avohit, en Morelia, Michoacán.",
+        "us2":"Somos una empacadora que apuesta por el trabajo local y la delicadeza que pueden dar las mujeres mexicanas en el trato y la selección de nuestra fruta.",
+        "cal":"Tenemos claro a dónde queremos llegar: ofrecer la mejor calidad para su mercado y el mejor ambiente de trabajo, con las mejores instalaciones posibles para ello."
+    }
+    }

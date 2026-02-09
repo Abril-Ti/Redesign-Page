@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "comp": "COMMITMENT",
+    "conta": "CONTACT"
+  },
+
+  "home": {
+    "title1": "WELCOME",
+    "job": "We work with the objective of maintaining leadership in the production and export of avocados in Mexico.",
+    "esf": "We strive to offer the national and international markets a top-quality product, with exceptional flavor, high safety standards, and a reliable traceability process from start to finish.",
+    "prod": "Our production is based on efficient and sustainable practices that not only guarantee avocado quality, but also generate economic benefits for our partners.",
+    "prom": "We promote the development and prosperity of the communities where we operate, reaffirming our social and environmental commitment.",
+    "title2": "DISCOVER",
+    "desc": "Discover some of our facilities and the actions we take to deliver the highest quality.",
+    "title3": "CERTIFICATIONS",
+    "cert": "Our certifications support our ongoing commitment to continuous improvement and reinforce the trust of our international business partners."
+  },
+
+  "foot": {
+    "cont": "Contact",
+    "sig": "Follow us on social media",
+    "ubi": "Location",
+    "rig": "All rights reserved."
+  },
+
+  "compr": {
+    "title1": "OUR COMMITMENT",
+    "com": "We are a committed, supportive, and responsible company towards the environment and the community, preserving quality from the beginning of the harvest through every stage of the industrial process, while complying with all socio-environmental regulations.",
+    "title2": "VISION",
+    "vis": "To grow as the leading company in the international market, supported by a comprehensive traceability process that preserves quality from cultivation to export through cutting-edge technology, achieving efficiency, reliability, and scalability in every season.",
+    "title3": "MISSION",
+    "mis": "Our mission is to be a fully committed company throughout the entire avocado value chain—from cultivation, harvesting, packing, and transportation to direct customer engagement—meeting the highest quality and safety standards through the most advanced technology available on the market.",
+    "title4": "OUR VALUES",
+    "val": "Socially, we are a company that does not discriminate based on cultural backgrounds or beliefs. We embrace diversity within society and are primarily characterized by the following values:",
+    "vals": {
+      "calidad": "Quality",
+      "honestidad": "Honesty",
+      "gratitud": "Gratitude",
+      "responsabilidad": "Responsibility",
+      "etica": "Ethics",
+      "pasion": "Passion",
+      "trabajo": "Teamwork",
+      "respeto": "Respect"
+    }
+  }
+}
