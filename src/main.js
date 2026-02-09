@@ -1,34 +1,50 @@
-//import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+
+// Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
+// Animaciones
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+// App
 import App from './App.vue'
 import router from './router'
 
+// Estilos globales
 import './assets/main.css'
 
+// i18n
+import i18n from './components/i18n'
+
+// Crear instancia de Vue
 const app = createApp(App)
 
+// Vuetify
 const vuetify = createVuetify({
-    components,
-    directives,
-});
+  components,
+  directives,
+})
 
+// Idioma
+app.config.globalProperties.$setLang = (lang) => {
+  i18n.global.locale.value = lang
+}
 
-app.use(createPinia())
-app.use(router)
-app.use(vuetify)
+// Plugins
+app
+  .use(createPinia())
+  .use(router)
+  .use(vuetify)
+  .use(i18n)
+  .mount('#app')
 
-app.mount('#app');
-
+// Animaciones
 AOS.init({
-  duration: 1000, // duración de la animación
-  once: true,     // solo animar una vez
-});
+  duration: 1000,
+  once: true,
+})
