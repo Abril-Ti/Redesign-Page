@@ -1,7 +1,7 @@
 <template>
   <div class="timeline-container text-center">
     <v-container class="text-center">
-      <h2 class="text-center montserrat-regular mt-40">GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO</h2>
+      <h2 class="text-center montserrat-regular mt-40">{{$t("timel.title")}}</h2>
     
 
       <!-- Contenido -->
@@ -22,10 +22,10 @@
                 v-for="(text, i) in timeline[selectedIndex].desc"
                 :key="i"
                 class="my-3">
-                {{ text }}
+                {{ $t(text) }}
               </li>
             </ul>
-            <p v-else class="mt-4 txt-description">{{ timeline[selectedIndex].desc }}</p>
+            <p v-else class="mt-4 txt-description">{{ $t(timeline[selectedIndex].desc) }}</p>
           </v-col>
         </v-row>
       </transition>
@@ -72,26 +72,26 @@ const timeline = [
   {
     year: '2019',
     img: 'Timeline/img-2019.png',
-    desc: 'Inicio de construcción de la planta agroindustrial.'
+    desc: 'timel.inicio'
   },
   {
     year: '2023',
     img: 'Timeline/img-2023-1.png',
     desc: [
-      'Inauguración del empaque.',
-      'Inicio de operaciones formales.',
-      'Primer embarque.'
+      'timel.inaguracion1',
+      'timel.inaguracion2',
+      'timel.inaguracion3'
     ]
   },
   {
     year: '2024',
-    img: 'Timeline/img-2024.jpg',
-    desc: 'Embarque numero 1000'
+    img: 'Timeline/img-2024.JPG',
+    desc: 'timel.embarque'
   },
   {
     year: '2025',
-    img: 'Timeline/img-2025.jpg',
-    desc: 'Tercer Aniversario del empaque.'
+    img: 'Timeline/img-2025.JPG',
+    desc: 'timel.aniversario'
   }
 ]
 

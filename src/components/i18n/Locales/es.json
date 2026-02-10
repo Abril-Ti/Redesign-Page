@@ -58,5 +58,14 @@
         "gpo":"Grupo Avohit de México fue fundado el 12 de agosto del 2019, colocando la primera piedra de la mega planta agroindustrial de Avohit, en Morelia, Michoacán.",
         "us2":"Somos una empacadora que apuesta por el trabajo local y la delicadeza que pueden dar las mujeres mexicanas en el trato y la selección de nuestra fruta.",
         "cal":"Tenemos claro a dónde queremos llegar: ofrecer la mejor calidad para su mercado y el mejor ambiente de trabajo, con las mejores instalaciones posibles para ello."
+    },
+    "timel":{
+        "title":"GRUPO AVOHIT DE MÉXICO A TRAVÉS DEL TIEMPO",
+        "inicio":"Inicio de construcción de la planta agroindustrial.",
+        "inaguracion1": "Inauguración del empaque.",
+        "inaguracion2": "Inicio de operaciones formales.",
+        "inaguracion3": "Primer embarque.",
+        "embarque":"Embarque numero 1000",
+        "aniversario":"Tercer Aniversario del empaque."
     }
     }

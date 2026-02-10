@@ -44,5 +44,22 @@
       "trabajo": "Teamwork",
       "respeto": "Respect"
     }
-  }
+  },
+  "about":{
+        "title1":"US",
+        "us":"We are a pioneer in the field of avocado, whose purpose starts from the selection of the best lands and geographical location that involves the diversity of climates and altitudes in order to produce the best quality and maximum volume in the world.",
+        "title2":"OUR LINE",
+        "gpo":"Grupo Avohit de México was founded on August 12, 2019, laying the foundation stone of the agro-industrial mega plant of Avohit, in Morelia, Michoacán. ",
+        "us2":"We are a packer who is committed to the local work and delicacy that Mexican women can give in the treatment and selection of our fruit. ",
+        "cal":"Tenemos claro a dónde queremos llegar: ofrecer la mejor calidad para su mercado y el mejor ambiente de trabajo, con las mejores instalaciones posibles para ello."
+    },
+       "timel":{
+        "title":"GRUPO AVOHIT DE MÉXICO OVER TIME",
+        "inicio":"Start of construction of the agro-industrial plant.",
+        "inaguracion1": "Packaging facility inauguration.",
+        "inaguracion2": "Start of formal operations.",
+        "inaguracion3": "First shipment.",
+        "embarque":"Boarding number 1000",
+        "aniversario":"Third anniversary of packaging."
+    }
 }
