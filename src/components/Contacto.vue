@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <h2 class="text-center montserrat-regular">CONTACTANOS</h2>
+    <h2 class="text-center montserrat-regular">{{ $t("contact.title") }}</h2>
     <div class="decorative-line line-contact mb-5"></div>
 
     <div class="contact-card mt-3">
@@ -11,22 +11,22 @@
         method="POST"
       >
         <div>
-          <label for="nombre" class="txt-description">Nombre</label>
-          <input type="text" name="nombre" placeholder="Escriba su nombre" required />
+          <label for="nombre" class="txt-description">{{ $t("contact.name") }}</label>
+          <input type="text" name="nombre" :placeholder="$t('placeh.nam')" required />
         </div>
         <div>
-          <label for="correo" class="txt-description">Correo electrónico</label>
-          <input type="email" name="correo" placeholder="Escriba su correo" required />
+          <label for="correo" class="txt-description">{{ $t("contact.mail") }}</label>
+          <input type="email" name="correo" :placeholder="$t('placeh.mail')" required />
         </div>
         <div>
-          <label for="asunto" class="txt-description">Asunto</label>
-          <input type="text" name="asunto" placeholder="Escriba el asunto" required />
+          <label for="asunto" class="txt-description">{{ $t("contact.sub") }}</label>
+          <input type="text" name="asunto" :placeholder="$t('placeh.sub')" required />
         </div>
         <div>
-          <label for="mensaje" class="txt-description">Mensaje</label>
-          <textarea rows="6" name="Mensaje" placeholder="Escriba su mensaje" required></textarea>
+          <label for="mensaje" class="txt-description">{{ $t("contact.message") }}</label>
+          <textarea rows="6" name="Mensaje" :placeholder="$t('placeh.mess')" required></textarea>
         </div>
-        <button type="submit" class="montserrat-regular">Enviar</button>
+        <button type="submit" class="montserrat-regular">{{ $t("contact.submit") }}</button>
       </form>
 
       <div class="contact-image">
@@ -109,6 +109,7 @@ button {
 
 button:hover {
   background-color: #3a8b2d;
+  box-shadow: 0px 4px 8px grey;
 }
 
 /* Responsivo */

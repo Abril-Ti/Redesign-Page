@@ -134,5 +134,8 @@ const fotos = [
   .line-comp, .line-vis, .line-val {
     width: 250px !important;
   }
+  .contenedor-textos{
+    width: 80%;
+  }
 }
 </style>
