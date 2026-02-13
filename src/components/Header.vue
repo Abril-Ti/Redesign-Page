@@ -7,7 +7,7 @@
           <!-- Logo -->
           <div class="cont-logo">
             <RouterLink to="/" class="nav-link">
-              <img src="/Logo-Avohit-cafe.png" alt="Logo" />
+              <img class="logo" src="/Logo-Avohit-cafe.png" alt="Logo" />
             </RouterLink>
           </div>
 
@@ -27,10 +27,8 @@
                 <!-- <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
                 <div class="v-sheet ma-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="btn-contact">{{ $t("nav.conta") }}</button></RouterLink></div>
                 <div>
-                  <button @click="$setLang('es')"> <img src="/mx.png" alt="ESP"> </button>
-                  <button @click="$setLang('en')"><img src="/us.png" alt="ENG">  </button>
-                  
-
+                  <button @click="$setLang('es')"> <img class="btn-leng" src="/mx.png" alt="ESP"></button>
+                  <button @click="$setLang('en')"><img class="btn-leng" src="/us.png" alt="ENG"></button>
                 </div>
             </div>
 
@@ -40,11 +38,15 @@
   <!-- Vista movil-->
             <transition name="slide-down" class="text-center mb-4">
                 <div v-show="mostrarMenu" class="d-md-none flex-column nav-items-mobile">
-                    <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link"  @click="cerrarMenuYSubir">INICIO</RouterLink></div>
-                    <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">NOSOTROS</RouterLink></div>
-                    <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">COMPROMISO</RouterLink></div>
+                    <div class="v-sheet ma-2"><RouterLink to="/" class="nav-link"  @click="cerrarMenuYSubir">{{ $t("nav.home") }}</RouterLink></div>
+                    <div class="v-sheet ma-2"><RouterLink to="/nosotros" class="nav-link" @click="cerrarMenuYSubir">{{ $t("nav.about") }}</RouterLink></div>
+                    <div class="v-sheet ma-2"><RouterLink to="/compromiso" class="nav-link" @click="cerrarMenuYSubir">{{ $t("nav.comp") }}</RouterLink></div>
                     <!--                    <div class="v-sheet ma-2"><RouterLink to="/sabiasque" class="nav-link" @click="cerrarMenuYSubir">¿SABÍAS QUÉ?</RouterLink></div>-->
-                    <div class="v-sheet ma-2 mb-4"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="mb-2 btn-contact">CONTACTO</button></RouterLink></div>
+                    <div class="v-sheet ma-2 mb-2"><RouterLink to="/contacto" @click="cerrarMenuYSubir"><button class="mb-2 btn-contact">{{ $t("nav.conta") }}</button></RouterLink></div>
+                    <div>
+                  <button @click="$setLang('es')"> <img class="btn-leng" src="/mx.png" alt="ESP" @click="cerrarMenuYSubir"> </button>
+                  <button @click="$setLang('en')"><img class="btn-leng" src="/us.png" alt="ENG" @click="cerrarMenuYSubir">  </button>
+                </div>
                 </div>
             </transition>
         </div>
@@ -76,8 +78,13 @@ const {t} =useI18n()
   z-index: 999;
 }
 
-img {
+.logo {
   height: 60px;
+}
+
+.btn-leng{
+  height: 40px;
+  margin-left: 9px;
 }
 
 .nav-link {
@@ -141,6 +148,10 @@ img {
   .nav-items .v-sheet {
     margin: 5px 0;
     text-align: center;
+  }
+
+  .btn-contact{
+    margin-left: 0rem;
   }
 }
 /* Transición suave del menú */

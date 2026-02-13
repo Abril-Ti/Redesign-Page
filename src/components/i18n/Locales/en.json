@@ -8,14 +8,14 @@
 
   "home": {
     "title1": "WELCOME",
-    "job": "We work with the objective of maintaining leadership in the production and export of avocados in Mexico.",
-    "esf": "We strive to offer the national and international markets a top-quality product, with exceptional flavor, high safety standards, and a reliable traceability process from start to finish.",
-    "prod": "Our production is based on efficient and sustainable practices that not only guarantee avocado quality, but also generate economic benefits for our partners.",
+    "job": "We are committed to maintaining leadership in the production and export of avocados in Mexico.",
+    "esf": "We strive to provide national and international markets with a top-quality product, exceptional flavor, high food safety standards, and a reliable traceability process from start to finish.",
+    "prod": "Our production is based on efficient and sustainable practices that not only ensure avocado quality but also generate economic benefits for our partners.",
     "prom": "We promote the development and prosperity of the communities where we operate, reaffirming our social and environmental commitment.",
     "title2": "DISCOVER",
-    "desc": "Discover some of our facilities and the actions we take to deliver the highest quality.",
+    "desc": "Discover our facilities and the actions we take to deliver the highest quality standards.",
     "title3": "CERTIFICATIONS",
-    "cert": "Our certifications support our ongoing commitment to continuous improvement and reinforce the trust of our international business partners."
+    "cert": "Our certifications reflect our ongoing commitment to continuous improvement and strengthen the trust of our international business partners."
   },
 
   "foot": {
@@ -27,13 +27,13 @@
 
   "compr": {
     "title1": "OUR COMMITMENT",
-    "com": "We are a committed, supportive, and responsible company towards the environment and the community, preserving quality from the beginning of the harvest through every stage of the industrial process, while complying with all socio-environmental regulations.",
+    "com": "We are a committed, responsible, and environmentally conscious company that preserves quality from the beginning of the harvest through every stage of the industrial process, fully complying with all socio-environmental regulations.",
     "title2": "VISION",
-    "vis": "To grow as the leading company in the international market, supported by a comprehensive traceability process that preserves quality from cultivation to export through cutting-edge technology, achieving efficiency, reliability, and scalability in every season.",
+    "vis": "To become the leading company in the international market, supported by a comprehensive traceability process that preserves quality from cultivation to export through cutting-edge technology, achieving efficiency, reliability, and scalability in every season.",
     "title3": "MISSION",
-    "mis": "Our mission is to be a fully committed company throughout the entire avocado value chain—from cultivation, harvesting, packing, and transportation to direct customer engagement—meeting the highest quality and safety standards through the most advanced technology available on the market.",
+    "mis": "Our mission is to operate with full commitment across the entire avocado value chain—from cultivation, harvesting, packing, and transportation to direct customer engagement—meeting the highest quality and food safety standards through advanced technology.",
     "title4": "OUR VALUES",
-    "val": "Socially, we are a company that does not discriminate based on cultural backgrounds or beliefs. We embrace diversity within society and are primarily characterized by the following values:",
+    "val": "We are a socially responsible company that promotes inclusion and respects cultural diversity and beliefs. We are primarily defined by the following values:",
     "vals": {
       "calidad": "Quality",
       "honestidad": "Honesty",
@@ -45,21 +45,39 @@
       "respeto": "Respect"
     }
   },
-  "about":{
-        "title1":"US",
-        "us":"We are a pioneer in the field of avocado, whose purpose starts from the selection of the best lands and geographical location that involves the diversity of climates and altitudes in order to produce the best quality and maximum volume in the world.",
-        "title2":"OUR LINE",
-        "gpo":"Grupo Avohit de México was founded on August 12, 2019, laying the foundation stone of the agro-industrial mega plant of Avohit, in Morelia, Michoacán. ",
-        "us2":"We are a packer who is committed to the local work and delicacy that Mexican women can give in the treatment and selection of our fruit. ",
-        "cal":"Tenemos claro a dónde queremos llegar: ofrecer la mejor calidad para su mercado y el mejor ambiente de trabajo, con las mejores instalaciones posibles para ello."
-    },
-       "timel":{
-        "title":"GRUPO AVOHIT DE MÉXICO OVER TIME",
-        "inicio":"Start of construction of the agro-industrial plant.",
-        "inaguracion1": "Packaging facility inauguration.",
-        "inaguracion2": "Start of formal operations.",
-        "inaguracion3": "First shipment.",
-        "embarque":"Boarding number 1000",
-        "aniversario":"Third anniversary of packaging."
-    }
+
+  "about": {
+    "title1": "ABOUT US",
+    "us": "We are a pioneer in the avocado industry. Our purpose begins with the selection of the best agricultural land and strategic geographic locations, leveraging diverse climates and altitudes to produce premium-quality avocados at optimal volumes.",
+    "title2": "OUR JOURNEY",
+    "gpo": "Grupo Avohit de México was founded on August 12, 2019, marking the beginning of the development of the Avohit agro-industrial plant in Morelia, Michoacán.",
+    "us2": "We are a packing company committed to local talent and recognize the valuable contribution of Mexican women in the careful handling and selection of our fruit.",
+    "cal": "We have a clear vision of our direction: to deliver the highest quality to our markets while providing an excellent work environment supported by state-of-the-art facilities."
+  },
+
+  "timel": {
+    "title": "GRUPO AVOHIT DE MÉXICO THROUGH THE YEARS",
+    "inicio": "Start of construction of the agro-industrial plant.",
+    "inaguracion1": "Packaging facility inauguration.",
+    "inaguracion2": "Start of formal operations.",
+    "inaguracion3": "First export shipment.",
+    "embarque": "1,000th shipment milestone.",
+    "aniversario": "Third anniversary of the packing facility."
+  },
+
+  "contact": {
+    "title": "CONTACT US",
+    "name": "Name",
+    "mail": "Email",
+    "sub": "Subject",
+    "message": "Message",
+    "submit": "Send"
+  },
+
+  "placeh": {
+    "nam": "Enter your name",
+    "mail": "Enter your email address",
+    "sub": "Enter the subject",
+    "mess": "Write your message"
+  }
 }
