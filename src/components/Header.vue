@@ -7,7 +7,7 @@
           <!-- Logo -->
           <div class="cont-logo">
             <RouterLink to="/" class="nav-link">
-              <img src="/Logo-avohit-GRIS.png" alt="Logo" />
+              <img src="/Logo-Avohit-cafe.png" alt="Logo" />
             </RouterLink>
           </div>
 
