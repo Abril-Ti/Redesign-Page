@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t,a as r}from"./index-C04SYOX6.js";const a={},c={class:"about"};function n(_,o){return t(),s("div",c,[...o[0]||(o[0]=[r("h1",null,"Nosotros",-1)])])}const d=e(a,[["render",n]]);export{d as default};
