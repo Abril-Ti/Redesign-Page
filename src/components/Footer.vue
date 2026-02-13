@@ -9,7 +9,7 @@
 
         <!--            Contacto y redes            -->
         <v-col cols="12" md="5" class="text-center mb-3 mt-10 contact-container">
-            <h4 class="title-contacto">Contacto</h4>
+            <h4 class="title-contacto">{{$t("foot.cont")}}</h4>
             <v-row class="text-center">
                 <v-col cols="12" md="6" sm="6">
                     <div class="d-flex align-center justify-center mb-1">
@@ -25,7 +25,7 @@
                 </v-col>
             </v-row>
           
-            <h4 class="mt-4">¡Síguenos en redes sociales!</h4>
+            <h4 class="mt-4">{{$t("foot.sig")}}</h4>
             <div class="d-flex justify-center">
                 <a href="https://www.facebook.com/share/16HVJLtXSv/" target="_blank">
                     <img src="/icon-facebook-2.png" alt="Facebook" class="icons-social-media" />
@@ -38,7 +38,7 @@
 
         <!--            Ubicación           -->
         <v-col cols="12" md="4" class="text-center mb-1">
-          <h4 class="title-ubi">Ubicación</h4>
+          <h4 class="title-ubi">{{$t("foot.ubi")}}</h4>
           <div class="d-flex align-center justify-center" style="margin-bottom: 8px;">
             <img src="/icon-ubi.png" alt="Mapa" class="icons" />
             <p class="contact-text">
@@ -54,7 +54,7 @@
 
       <!--          Copyright           -->
       <div class="copyright text-center">
-        <p>© {{ currentYear }} Grupo AvoHit de México. Todos los derechos reservados.</p>
+        <p>© {{ currentYear }} Grupo AvoHit de México. {{$t("foot.rig")}}</p>
       </div>
     </v-container>
   </div>

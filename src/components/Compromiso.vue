@@ -2,15 +2,13 @@
   <div>
 
     <!-- NUESTRO COMPROMISO -->
-    <h2 class="text-center montserrat-regular">NUESTRO COMPROMISO</h2>
+    <h2 class="text-center montserrat-regular">{{ $t("compr.title1") }}</h2>
     <div class="decorative-line line-comp"></div>
 
     <v-container fluid class="contenedor-textos">
       <v-row class="align-center justify-center compromiso-section">
         <v-col cols="12" md="6" class="text-md-end text-center">
-          <p class="txt-description txt-val">
-            Somos una empresa comprometida, solidaria, responsable con el medio ambiente y población, al conservar desde el inicio de la cosecha, hasta el último proceso con la industria cumpliendo con todas las reglas de índole socioambiental.
-          </p>
+          <p class="txt-description txt-val">{{ $t("compr.com") }} </p>
         </v-col>
 
         <v-col cols="12" md="6" class="text-center">
@@ -21,29 +19,23 @@
 
     <!-- VISIÓN -->
     <div class="text-center contenedor-textos" style="margin-top: 100px;">
-      <h2 class="montserrat-regular txt-val">VISIÓN</h2>
+      <h2 class="montserrat-regular txt-val">{{ $t("compr.title2") }}</h2>
       <div class="decorative-line line-vis"></div>
-      <p class="txt-description txt-val">
-        Nuestra misión es ser una empresa completamente comprometida desde el cultivo, cosecha, empaque y traslado del aguacate hasta el contacto con el cliente, con los estándares más exigentes en la calidad e inocuidad, mediante la tecnología más vanguardista del mercado, satisfaciendo así el paladar por medio de la calidad en todo el mundo, sin distinción de temporadas.
-      </p>
+      <p class="txt-description txt-val">{{ $t("compr.vis") }}</p>
     </div>
 
     <!-- MISIÓN -->
     <div class="text-center contenedor-textos">
-      <h2 class="montserrat-regular mt-10 txt-val">MISIÓN</h2>
+      <h2 class="montserrat-regular mt-10 txt-val">{{ $t("compr.title3") }}</h2>
       <div class="decorative-line line-vis"></div>
-      <p class="txt-description txt-val">
-        Crecer como la empresa líder en el mercado internacional con el proceso de trazabilidad más íntegro, que preserva la calidad desde el cultivo hasta la exportación, por medio de la tecnología más vanguardista, obteniendo así la mayor eficiencia, confianza y capacidad de acuerdo a la demanda de cualquier temporada.
-      </p>
+      <p class="txt-description txt-val">{{ $t("compr.mis") }}</p>
     </div>
 
     <!-- NUESTROS VALORES -->
     <div class="container-valores text-center mb-7 contenedor-textos">
-      <h2 class="montserrat-regular">NUESTROS VALORES</h2>
+      <h2 class="montserrat-regular">{{ $t("compr.title4") }}</h2>
       <div class="decorative-line line-val"></div>
-      <p class="txt-description txt-val">
-        Socialmente somos una empresa que no distingue cuestiones culturales, creencias, incluyendo diversidad de preferencias en la sociedad, caracterizándonos principalmente por:
-      </p>
+      <p class="txt-description txt-val">{{ $t("compr.val") }}</p>
 
       <v-container class="text-center">
         <v-row class="justify-center">
@@ -57,7 +49,7 @@
             data-aos="flip-down"
           >
             <img :src="foto.url" :alt="foto.texto" class="icon-valor" />
-            <p class="txt-description valor text-center">{{ foto.texto }}</p>
+            <p class="txt-description valor text-center">  {{ $t(`compr.vals.${foto.texto}`) }}</p>
           </v-col>
         </v-row>
       </v-container>
@@ -68,14 +60,14 @@
 
 <script setup>
 const fotos = [
-  { url: 'valores/iconos-web-1.png', texto: 'Calidad' },
-  { url: 'valores/iconos-web-2.png', texto: 'Honestidad' },
-  { url: 'valores/iconos-web-3.png', texto: 'Gratitud' },
-  { url: 'valores/iconos-web-4.png', texto: 'Responsabilidad' },
-  { url: 'valores/iconos-web-5.png', texto: 'Ética' },
-  { url: 'valores/iconos-web-6.png', texto: 'Pasión' },
-  { url: 'valores/iconos-web-7.png', texto: 'Trabajo en equipo' },
-  { url: 'valores/iconos-web-8.png', texto: 'Respeto' },
+  { url: 'valores/iconos-web-1.png', texto: 'calidad' },
+  { url: 'valores/iconos-web-2.png', texto: 'honestidad' },
+  { url: 'valores/iconos-web-3.png', texto: 'gratitud' },
+  { url: 'valores/iconos-web-4.png', texto: 'responsabilidad' },
+  { url: 'valores/iconos-web-5.png', texto: 'etica' },
+  { url: 'valores/iconos-web-6.png', texto: 'pasion' },
+  { url: 'valores/iconos-web-7.png', texto: 'trabajo' },
+  { url: 'valores/iconos-web-8.png', texto: 'respeto' },
 ];
 </script>
 
