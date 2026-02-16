@@ -14,7 +14,7 @@
                 <v-col cols="12" md="6" sm="6">
                     <div class="d-flex align-center justify-center mb-1">
                         <img src="/icon-phone-2.png" alt="Teléfono" class="icons" />
-                        <p class="contact-text">+52 (443) 898-9099</p>
+                        <p class="contact-text">+52 (443) 898 0990</p>
                     </div>
                 </v-col>
                 <v-col cols="12" md="6" sm="6">
