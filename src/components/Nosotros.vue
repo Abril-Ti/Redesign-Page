@@ -101,6 +101,7 @@ import Timeline2 from './Timeline2.vue'
   width: 500px;
 }
 
+
 /* Responsividad */
 @media (max-width: 768px) {
   .section-row {
