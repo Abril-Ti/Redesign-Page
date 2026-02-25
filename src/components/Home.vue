@@ -54,25 +54,8 @@
     </section>
 
     <!-- Certificaciones -->
-    <section class="certificaciones-container mt-10">
-      <h2 class="montserrat-regular title-line">{{ $t("home.title3") }}</h2>
-      <div class="decorative-line line-cert"></div>
-      <div class="text-container">
-        <p class="txt-description text-center">{{ $t("home.cert") }}</p>
-      </div>
-      <div class="d-flex flex-wrap-reverse align-center justify-center mb-6">
-        <ul class="list-certificaciones txt-description">
-          <li>🥑 Programa de Exportaciones de Aguacate Hass de México a los E.U.A.</li>
-          <li>🥑 Norma GLOBALG.A.P. para Cadena de Custodia (CoC).</li>
-          <li>🥑 Sistemas de Reducción de Riesgos de Contaminación.</li>
-          <li>🥑 Sedex Members Ethical Trade Audit (SMETA).</li>
-          <li>🥑 PrimusGFS.</li>
-          <li>🥑 Pro Forest Avocado.</li>
-        </ul>
-        <!-- <img src="/Aguacate-mascota-lapiz.png" alt="Mascota con lápiz" class="img-content" />-->
-        <img src="/Personaje-Avocatin-version-2.jpg" alt="Mascota version 2" class="img-content avocatin-sal"/>
-      </div>
-    </section>
+
+    <CertificacionComponent/>
 
     <!--  DE MOMENTO SE OCULTA ESTA SECCION POR INDICACIONES DE DIRECCION  -->
       <!-- 
@@ -98,12 +81,15 @@
         ></video>
       </div>
     </section> -->
+  
+    
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
 import SliderComponent from '../components/Slider.vue';
+import CertificacionComponent from './Certificacion.vue';
 
 const promoVideo = ref(null);
 const videoSection = ref(null);
