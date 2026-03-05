@@ -1,8 +1,9 @@
 <template>
- <ContactoComponent/>
+ <NvoForm/>
 </template>
 <script setup>
-import ContactoComponent from '../components/Contacto.vue'
+
+import NvoForm from '../components/FormPHP.vue'
 </script>
 <style>
 
