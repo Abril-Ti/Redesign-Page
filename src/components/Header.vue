@@ -105,7 +105,8 @@ const {t} =useI18n()
   color: white !important;
   border-radius: 18px;
   letter-spacing: 3px;
-  margin-left: 3rem;
+  margin-left: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-contact:hover {

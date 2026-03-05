@@ -71,7 +71,7 @@
     "mail": "Email",
     "sub": "Subject",
     "message": "Message",
-    "submit": "Send"
+    "submit": "SEND"
   },
 
   "placeh": {
@@ -79,5 +79,10 @@
     "mail": "Enter your email address",
     "sub": "Enter the subject",
     "mess": "Write your message"
+  },
+    "modal":{
+      "title":  "Thank you for contacting us",
+      "mess":   "Message sent successfully",
+      "btn":    "CLOSE"
   }
 }

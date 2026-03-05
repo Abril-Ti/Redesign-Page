@@ -77,7 +77,7 @@
     "mail": "Correo electrónico",
     "sub": "Asunto",
     "message": "Mensaje",
-    "submit": "Enviar"
+    "submit": "ENVIAR"
   },
 
   "placeh": {
@@ -85,5 +85,10 @@
     "mail": "Escriba su correo electrónico",
     "sub": "Escriba el asunto",
     "mess": "Escriba su mensaje"
+  },
+  "modal":{
+      "title":  "Gracias por contactarte con nosotros",
+      "mess":   "Mensaje enviado con éxito.",
+      "btn":    "CERRAR"
   }
 }
