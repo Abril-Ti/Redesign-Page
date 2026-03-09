@@ -59,7 +59,7 @@
         <img src="/Avocatin en escritorio.png" alt="imagen contacto" />
       </div>
     </div>
-    
+
     <!-- Modal -->
     <div v-if="modalAbierto" class="modal-overlay" @click="cerrarModal">
       <div class="modal-content" @click.stop>
@@ -89,7 +89,7 @@ export default {
   data() {
     return {
       loading: false,
-      modalAbierto: false,   // ← ahora sí dentro del componente
+      modalAbierto: false,  
       form: {
         nombre: "",
         correo: "",
@@ -104,10 +104,12 @@ export default {
       this.loading = true
 
       try {
-        const response = await axios.post("/sendMail.php", this.form)
+        const response = await axios.post(
+          "https://www.grupoavohitdemexico.com/send-mail.php",
+           this.form)
 
-        // Tu PHP devuelve { status: "success" }
-        if (response.data.status === "success") {
+        if (response.data.success) {
+
           this.abrirModal()
 
           this.form = {
@@ -116,6 +118,7 @@ export default {
             asunto: "",
             mensaje: ""
           }
+          
         } else {
           alert("No se pudo enviar el mensaje")
         }
@@ -208,7 +211,7 @@ button {
   color: white !important;
   border-radius: 18px;
   letter-spacing: 3px;
-  margin-left: 3rem;
+  
 }
 
 button:hover {
@@ -216,7 +219,7 @@ button:hover {
   box-shadow: 0px 4px 8px grey;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .contact-card {
     flex-direction: column;
@@ -230,7 +233,7 @@ button:hover {
   }
 
   button {
-    width: 100%;
+    width: 156px;
   }
 }
 
@@ -248,7 +251,7 @@ button:hover {
   z-index: 9999;
 }
 
-/* Caja del modal */
+
 .modal-content {
   background: #fff;
   width: 90%;
@@ -259,21 +262,21 @@ button:hover {
   animation: slideUp 0.35s ease forwards;
 }
 
-/* Título */
+
 .modal-title {
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
-/* Texto */
+
 .modal-text {
   font-size: 1rem;
   margin-bottom: 20px;
   color: #444;
 }
 
-/* Botón */
+/* Boton */
 .modal-btn {
   background: #2a6f3b;
   color: white;
